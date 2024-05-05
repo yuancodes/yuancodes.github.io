@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8">
+    <!--vue组件: https://cdn.jsdelivr.net/npm/docsify/themes/vue.min.css-->
+    <link rel="stylesheet" href="./css/vue.min.css">
+    <!--侧边栏支持折叠箭头样式插件: https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css-->
+    <link rel="stylesheet" href="./css/sidebar.min.css"/>
+    <!--- 网站ico图标 -->
+    <link rel="icon" href="_media/favicon.ico">
+</head>
+<style>
+    :root {
+        --docsifytabs-border-color: #ededed;
+        --docsifytabs-tab-highlight-color: purple;
+    }
+
+    figure {
+        text-align: center
+    }
+</style>
+<body>
+<title>姜源の云笔记</title>
+<meta name="author" content="Jerry(姜源)">
+<meta name="keywords" content="Java,Html,CSS,JavaScript,Python,C,Linux,shell编程经验分享、技术总结、心得体会">
+<meta name="description" content="Java、Html、CSS、JavaScript、Python、C、Linux、shell编程经验分享、技术总结、心得体会">
+
+<!--正文-->
+<div id="app">美好将发生...</div>
+
+<!--核心脚本-->
+<script>
+    window.$docsify = {
+        //[logo或name任1]网站图标：显示在侧边栏顶部
+        logo: '/_media/logo100px.png',
+        //[logo或name任1]文档标题：显示在侧边栏顶部
+        name: '姜源の云笔记',
+        //点击 logo 或 name 后跳转的地址
+        nameLink: '/',
+        //侧边栏：默认根据.md自动生成，通过加载 Markdown 文件 _sidebar.md 来配置侧边
+        loadSidebar: true,
+        //同时设置 loadSidebar 和 autoHeader 后，可以根据 _sidebar.md 的内容自动为每个页面增加标题
+        autoHeader: true,
+        //侧边目录的最大层级，设置为 0 时仅展示文档标题不展示文档内部h1-h6标题在侧边栏
+        subMaxLevel: 0,
+        //导航栏：通过加载 Markdown 文件 _navbar.md 来配置导航
+        loadNavbar: true,
+        //false 时，只在访问主页时加载封面
+        onlyCover: false,
+        //开启后是加载 _coverpage.md 文件，也可以自定义文件名
+        coverpage: true,
+        //在页面右上角渲染一个 GitHub Corner 挂件
+        repo: 'https://janycode.github.io',
+        //文档最大支持渲染的标题层级
+        maxLevel: 5,
+        //切换页面后是否自动跳转到页面顶部
+        auto2top: true,
+        //小屏设备下合并导航栏到侧边栏
+        mergeNavbar: true,
+        //有时我们不希望 docsify 处理我们的链接
+        noCompileLinks: ['/test1', '/test2/.*'],
+        //资源的文件扩展名
+        ext: '.md',
+        //在找不到指定页面时加载 _404.md
+        notFoundPage: true,
+        //自定义首页加载文件 /README.md
+        homepage: 'README.md',
+        //支持折叠的侧边栏扫描文件
+        alias: {
+            '/.*/_sidebar.md': '/_sidebar.md',
+        },
+        //支持折叠的侧边栏默认层级
+        sidebarDisplayLevel: 0,
+        //全文搜索
+        search: {
+            noData: {
+                '/': '没有结果！'
+            },
+            paths: 'auto',
+            placeholder: {
+                '/': '搜索'
+            }
+        },
+        //Markdown图片居中设置
+        markdown: {
+            renderer: {
+                image: function (href, title, text) {
+                    // 按照原来的渲染 img
+                    var image_html = this.origin.image.apply(this, arguments)
+                    // 用 figure 包一下图片，实现居中
+                    return '<figure>' + image_html + '<figcaption>' +
+                        '</figcaption></figure>'
+                }
+            }
+        },
+        //Markdown选项卡配置
+        tabs: {
+            persist: true,      // default
+            sync: true,      // default
+            theme: 'classic', // default
+            tabComments: true,      // default
+            tabHeadings: true       // default
+        },
+        //评论系统支持 Disqus
+        //disqus: 'shortname',
+        //页面右侧toc文档内的侧边栏
+        toc: {
+            tocMaxLevel: 4,
+            target: "h1, h2, h3, h4, h5, h6",
+        },
+        //代码复制插件：docsify-copy-code
+        copyCode: {
+            buttonText: '复制',
+            errorText: '出错了',
+            successText: '已复制'
+        },
+        //字数统计改为中文
+        count: {
+            countable: true,
+            fontsize: '0.9em',
+            color: 'rgb(90,90,90)',
+            language: 'chinese'
+        },
+        pagination: {
+            previousText: '上一篇',
+            nextText: '下一篇',
+            crossChapter: true,
+            crossChapterText: true,
+        },
+        //页脚增强插件的页脚配置
+        footer: {
+            copy: '<span>Docsify &copy; 2016</span>',
+            auth: 'by Jerry(姜源)',
+            pre: '<hr/>',
+            style: 'text-align: right;',
+            class: 'className',
+        }
+    }
+</script>
+<!--docsify: https://cdn.bootcdn.net/ajax/libs/docsify/4.13.0/docsify.min.js-->
+<script src="./js/docsify.min.js"></script>
+<!--search 全文搜索插件: https://cdn.bootcdn.net/ajax/libs/docsify/4.13.0/plugins/search.min.js-->
+<script src="./js/search.min.js"></script>
+<!--emoji 表情图标插件: https://cdn.bootcdn.net/ajax/libs/docsify/4.13.0/plugins/emoji.min.js-->
+<script src="./js/emoji.min.js"></script>
+<!--zoom image 图片缩放插件: https://cdn.bootcdn.net/ajax/libs/docsify/4.13.0/plugins/zoom-image.min.js-->
+<script src="./js/zoom-image.min.js"></script>
+<!--复制到剪切版: https://cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js-->
+<script src="./js/docsify-copy-code.min.js"></script>
+<!--disqus.com 评论系统支持: https://cdn.bootcdn.net/ajax/libs/docsify/4.13.0/plugins/disqus.min.js-->
+<script src="./js/disqus.min.js"></script>
+<!--pagination 分页导航插件：上一篇 & 下一篇 https://unpkg.com/docsify-pagination/dist/docsify-pagination.min.js-->
+<script src="./js/docsify-pagination.min.js"></script>
+<!--字数统计: https://unpkg.com/docsify-count/dist/countable.js-->
+<script src="./js/countable.js"></script>
+<!--页脚增强插件: https://unpkg.com/docsify-footer-enh/dist/docsify-footer-enh.min.js-->
+<script src="./js/docsify-footer-enh.min.js"></script>
+<!--页面右侧 TOC: https://cdn.jsdelivr.net/npm/docsify-plugin-toc@1.1.0/dist/docsify-plugin-toc.min.js-->
+<script src="./js/docsify-plugin-toc.min.js"></script>
+<!--侧边栏支持折叠插件: https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js-->
+<script src="./js/docsify-sidebar-collapse.min.js"></script>
+<!--Markdown mustache插件：https://docsify-mustache.github.io/ 支持 markdown YAML Front Matter https://cdn.jsdelivr.net/npm/docsify/lib/plugins/front-matter.min.js-->
+<script src="./js/front-matter.min.js"></script>
+<!--Markdown多选项卡插件: https://cdn.jsdelivr.net/npm/docsify-tabs@1.6.0/dist/docsify-tabs.min.js-->
+<script src="./js/docsify-tabs.min.js"></script>
+<!--代码语法高亮: https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-xxx.min.js -->
+<script src="./js/prism-python.min.js"></script>
+<script src="./js/prism-c.min.js"></script>
+<script src="./js/prism-cpp.min.js"></script>
+<script src="./js/prism-clike.min.js"></script>
+<script src="./js/prism-java.min.js"></script>
+<script src="./js/prism-javascript.min.js"></script>
+<script src="./js/prism-sql.min.js"></script>
+<script src="./js/prism-css.min.js"></script>
+<script src="./js/prism-bash.min.js"></script>
+<script src="./js/prism-yaml.min.js"></script>
+
+<!--JQuery: https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js-->
+<script src="./js/jquery.min.js"></script>
+<!--解决目录使用中文时搜索栏被 encode 转码的问题：https://github.com/docsifyjs/docsify/issues/2002-->
+<script>
+    $(function () {
+        $('input').bind('input propertychange', function () {
+            var inputVal = $(this).val();
+            if (inputVal) {
+                console.log("输入搜索内容：" + inputVal);
+                //必须后置回显h2标签，经测试延时100ms可以
+                setTimeout(function () {
+                    $('div.matching-post a h2').each(function (index, value) {
+                        var finalH2Text = decodeURI(value.innerText);
+                        if (finalH2Text.indexOf("/") > 0) {
+                            var textArr = finalH2Text.split("/");
+                            finalH2Text = textArr[textArr.length - 1];
+                            $(this).text(finalH2Text);
+                        }
+                    });
+                }, 100);
+            } else {
+                console.log("其他");
+            }
+        });
+
+        // 获取博客名称
+        const blogName = window.$docsify.name;
+        // 获取页面标题
+        const pageTitle = document.title;
+        // 如果不是首页，则组合新的标签标题
+        if (pageTitle !== '姜源の云笔记') {
+            // 组合成新的标签标题
+            const newTitle = `${pageTitle} - ${blogName}`;
+            console.log("title=" + newTitle);
+            // 设置新的标签标题
+            document.title = newTitle;
+        }
+    })
+</script>
+
+<!-- live2d 动画-->
+<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+<script>
+    L2Dwidget.init({
+        "model": {
+            jsonPath: "https://unpkg.com/live2d-widget-model-haruto@1.0.5/assets/haruto.model.json",
+            "scale": 1
+        },
+        "display": {
+            "position": "right",
+            "width": 100,
+            "height": 200,
+            "hOffset": 35,
+            "vOffset": -85
+        },
+        "mobile": {
+            "show": false,
+            "scale": 0.1
+        },
+        "react": {
+            "opacityDefault": 0.75,
+            "opacityOnHover": 0.2
+        }
+    });
+</script>
+
+<!--用于鼠标放在文字上显示预览oss图片-->
+<script type="text/javascript">
+    function showImg() {
+        document.getElementById("asciiImg").style.display='block';
+    }
+    function hideImg() {
+        document.getElementById("asciiImg").style.display='none';
+    }
+</script>
+
+</body>
+</html>
