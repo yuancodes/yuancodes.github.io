@@ -337,6 +337,7 @@
             * [Spring 事务嵌套+异常+传播行为分析](./08_框架技术/02_Spring/04_Data/03-Spring%20事务嵌套+异常+传播行为分析.md)
         * 05_Validation
             * [Spring Validation注解参数校验](./08_框架技术/02_Spring/05_Validation/01-Spring%20Validation注解参数校验.md)
+            * [@Validated和@Valid用法详解](./08_框架技术/02_Spring/05_Validation/02-@Validated和@Valid用法详解.md)
     * 03_SpringMVC
         * [SpringMVC Demo](./08_框架技术/03_SpringMVC/01-SpringMVC%20Demo.md)
         * [SpringMVC 参数映射+响应](./08_框架技术/03_SpringMVC/02-SpringMVC%20参数映射+响应.md)
@@ -638,3 +639,5 @@
         * [使Redis序列化中文不会乱码配置类](./20_收藏整理/04_配置类/02-使Redis序列化中文不会乱码配置类.md)
         * [ThreadPoolConfig](./20_收藏整理/04_配置类/03-ThreadPoolConfig.md)
         * [递归解析json任意层级文件](./20_收藏整理/04_配置类/04-递归解析json任意层级文件.md)
+    * 05_其他
+        * [硬件对比候选图](./20_收藏整理/05_其他/00-硬件对比候选图.md)
