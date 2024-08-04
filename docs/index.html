@@ -126,9 +126,9 @@
             position: 'top',
             margin: '10px',
             float: 'right',
-            fontsize:'0.9em',
-            color:'rgb(90,90,90)',
-            language:'chinese',
+            fontsize: '0.9em',
+            color: 'rgb(90,90,90)',
+            language: 'chinese',
             localization: {
                 words: "",
                 minute: ""
@@ -251,6 +251,19 @@
     })
 </script>
 
+<!--回到顶部-->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $.goup({
+            trigger: 100,
+            bottomOffset: 52,
+            locationOffset: 25,
+            //title: 'TOP',
+            titleAsText: true
+        });
+    });
+</script>
+
 <!-- live2d 动画-->
 <script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
 <script>
@@ -280,10 +293,11 @@
 <!--用于鼠标放在文字上显示预览oss图片-->
 <script type="text/javascript">
     function showImg() {
-        document.getElementById("asciiImg").style.display='block';
+        document.getElementById("asciiImg").style.display = 'block';
     }
+
     function hideImg() {
-        document.getElementById("asciiImg").style.display='none';
+        document.getElementById("asciiImg").style.display = 'none';
     }
 </script>
 
