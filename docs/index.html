@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./css/vue.min.css">
     <!--侧边栏支持折叠箭头样式插件: https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css-->
     <link rel="stylesheet" href="./css/sidebar.min.css"/>
+    <!--为每篇文章添加面包屑导航-->
+    <link rel="stylesheet" href="./css/breadcrumb.min.css">
     <!--- 网站ico图标 -->
     <link rel="icon" href="_media/favicon.ico">
 </head>
@@ -73,6 +75,8 @@
         },
         //支持折叠的侧边栏默认层级
         sidebarDisplayLevel: 0,
+        //百度统计ID
+        baiduTjId: "fba5dfa57143abcf0c1e5415d36502af",
         //全文搜索
         search: {
             noData: {
@@ -97,11 +101,11 @@
         },
         //Markdown选项卡配置
         tabs: {
-            persist: true,      // default
-            sync: true,      // default
-            theme: 'classic', // default
-            tabComments: true,      // default
-            tabHeadings: true       // default
+            persist: true,       // default
+            sync: true,          // default
+            theme: 'classic',    // default
+            tabComments: true,   // default
+            tabHeadings: true    // default
         },
         //评论系统支持 Disqus
         //disqus: 'shortname',
@@ -116,22 +120,46 @@
             errorText: '出错了',
             successText: '已复制'
         },
-        //字数统计改为中文
+        //文章字数统计插件：docsify-count
         count: {
             countable: true,
-            fontsize: '0.9em',
-            color: 'rgb(90,90,90)',
-            language: 'chinese'
+            position: 'top',
+            margin: '10px',
+            float: 'right',
+            fontsize:'0.9em',
+            color:'rgb(90,90,90)',
+            language:'chinese',
+            localization: {
+                words: "",
+                minute: ""
+            },
+            isExpected: true
         },
+        //分页插件：docsify-pagination
         pagination: {
             previousText: '上一篇',
             nextText: '下一篇',
             crossChapter: true,
             crossChapterText: true,
         },
-        //页脚增强插件的页脚配置
+        //面包屑导航插件：docsify-breadcrumb
+        breadcrumb: {
+            showHome: true,
+            homeText: '首页',
+            separator: ' &rsaquo; ',
+            casing: 'capitalize',
+            linkColor: 'var(--theme-color, #42b983)',
+            size: 'small'
+        },
+        //进度条插件：docsify-progress
+        progress: {
+            position: "bottom",                  //默认top
+            color: "var(--theme-color,#42b983)", //默认颜色
+            height: "2px",                       //默认3px
+        },
+        //页脚插件：docsify-footer
         footer: {
-            copy: '<span>Docsify &copy; 2016</span>',
+            copy: '<span>Docsify &copy; since 2016</span>',
             auth: 'by Jerry(姜源)',
             pre: '<hr/>',
             style: 'text-align: right;',
@@ -153,8 +181,8 @@
 <script src="./js/disqus.min.js"></script>
 <!--pagination 分页导航插件：上一篇 & 下一篇 https://unpkg.com/docsify-pagination/dist/docsify-pagination.min.js-->
 <script src="./js/docsify-pagination.min.js"></script>
-<!--字数统计: https://unpkg.com/docsify-count/dist/countable.js-->
-<script src="./js/countable.js"></script>
+<!--字数统计: https://cdn.jsdelivr.net/npm/docsify-count@latest/dist/countable.min.js-->
+<script src="./js/countable.min.js"></script>
 <!--页脚增强插件: https://unpkg.com/docsify-footer-enh/dist/docsify-footer-enh.min.js-->
 <script src="./js/docsify-footer-enh.min.js"></script>
 <!--页面右侧 TOC: https://cdn.jsdelivr.net/npm/docsify-plugin-toc@1.1.0/dist/docsify-plugin-toc.min.js-->
@@ -176,6 +204,12 @@
 <script src="./js/prism-css.min.js"></script>
 <script src="./js/prism-bash.min.js"></script>
 <script src="./js/prism-yaml.min.js"></script>
+<!--每篇文章面包屑导航:https://cdn.jsdelivr.net/npm/docsify-breadcrumb@latest/dist/index.min.js-->
+<script async src="./js/index.min.js"></script>
+<!--每篇文章呈现顶部阅读进度: https://cdn.jsdelivr.net/npm/docsify-progress@latest/dist/progress.min.js-->
+<script src="./js/progress.min.js"></script>
+<!--百度统计: https://unpkg.com/docsify-baidu-tj@1.0.2/dist/docsify-baidu-tj.min.js-->
+<script src="./js/docsify-baidu-tj.min.js"></script>
 
 <!--JQuery: https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js-->
 <script src="./js/jquery.min.js"></script>
