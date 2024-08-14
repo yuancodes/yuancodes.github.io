@@ -5,6 +5,3 @@
 Hello, New World!
 
 ### 没有天生学霸，皆为厚积薄发。
-
-<iframe src="https://www.yoodb.com/slack-off/home.html" width="100%" height="1420">
-</iframe>
