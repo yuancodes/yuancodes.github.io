@@ -309,6 +309,7 @@
         * [ssh使用详解](./06_服务器/00_Server/ssh使用详解.md)
         * [systemctl使用详解](./06_服务器/00_Server/systemctl使用详解.md)
         * [安卓旧手机(小米5)搭建局域网服务器](./06_服务器/00_Server/安卓旧手机(小米5)搭建局域网服务器.md)
+        * [清理Linux服务器磁盘空间](./06_服务器/00_Server/清理Linux服务器磁盘空间.md)
     * 01_Tomcat
         * [服务器搭建和部署](./06_服务器/01_Tomcat/01-服务器搭建和部署.md)
         * [自写Tomcat服务器](./06_服务器/01_Tomcat/02-自写Tomcat服务器.md)
@@ -377,6 +378,7 @@
         * [16_SpringBoot 延时&异步任务](./08_框架技术/04_SpringBoot/16_SpringBoot%20延时&异步任务.md)
         * [17_SpringBoot+MyBatis多数据源实现](./08_框架技术/04_SpringBoot/17_SpringBoot+MyBatis多数据源实现.md)
         * [18_SpringBoot动态数据源实现](./08_框架技术/04_SpringBoot/18_SpringBoot动态数据源实现.md)
+        * [19_SpringBoot+Prometheus打造高效监控系统](./08_框架技术/04_SpringBoot/19_SpringBoot+Prometheus打造高效监控系统.md)
     * 05_SpringCloud
         * [Spring Cloud Alibaba快速上手](./08_框架技术/05_SpringCloud/Spring%20Cloud%20Alibaba快速上手.md)
         * [Spring Cloud Alibaba架构](./08_框架技术/05_SpringCloud/Spring%20Cloud%20Alibaba架构.md)
