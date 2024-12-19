@@ -6,7 +6,7 @@ tags:
 - OAuth2
 categories: 
 - 13_第三方
-- 00_OAuth2.0
+- 07_OAuth2.0
 ---
 
 ![auth2.0协议-logo](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20200815143434.png)

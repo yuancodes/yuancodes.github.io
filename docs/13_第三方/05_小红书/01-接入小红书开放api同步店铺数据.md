@@ -1,5 +1,5 @@
 ---
-title: 01-接入小红书api同步店铺数据
+title: 01-接入小红书开放api同步店铺数据
 date: 2024-11-13 15:54:23
 index_img: https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20241113155930.png
 tags:
