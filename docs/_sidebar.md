@@ -399,6 +399,7 @@
         * [18_SpringBoot动态数据源实现](./08_框架技术/04_SpringBoot/18_SpringBoot动态数据源实现.md)
         * [19_SpringBoot+Prometheus打造高效监控系统](./08_框架技术/04_SpringBoot/19_SpringBoot+Prometheus打造高效监控系统.md)
         * [SpringBoot外部配置文件热加载](./08_框架技术/04_SpringBoot/20-SpringBoot外部配置文件热加载.md)
+        * [SpringBoot解决跨域问题](./08_框架技术/04_SpringBoot/21-SpringBoot解决跨域问题.md)
     * 05_SpringCloud
         * [Spring Cloud Alibaba快速上手](./08_框架技术/05_SpringCloud/Spring%20Cloud%20Alibaba快速上手.md)
         * [Spring Cloud Alibaba架构](./08_框架技术/05_SpringCloud/Spring%20Cloud%20Alibaba架构.md)
@@ -619,6 +620,7 @@
     * 03_场景设计
         * [接口防抖即防重复提交方案](./17_项目设计/03_场景设计/01-接口防抖即防重复提交方案.md)
         * [如何优雅的实现接口重试机制](./17_项目设计/03_场景设计/02-如何优雅的实现接口重试机制.md)
+        * [基于AOP拆分IN查询提高查询效率](./17_项目设计/03_场景设计/03-基于AOP拆分IN查询提高查询效率.md)
 * 18_源码分析
     * [SpringBoot启动全流程源码解析](./18_源码分析/01-SpringBoot启动全流程源码解析.md)
     * [SpringBoot自动配置实现原理及源码解析](./18_源码分析/02-SpringBoot自动配置实现原理及源码解析.md)
