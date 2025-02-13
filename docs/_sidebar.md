@@ -531,7 +531,7 @@
         * [prompt提示词指导规范](./13_第三方/03_OpenAI/05-prompt提示词指导规范.md)
         * [prompt提示词编写技巧](./13_第三方/03_OpenAI/06-prompt提示词编写技巧.md)
         * [百度文心一言接入流程-java版](./13_第三方/03_OpenAI/07-百度文心一言接入流程-java版.md)
-        * [Deepseek从入门到精通](./13_第三方/03_OpenAI/08-Deepseek从入门到精通.md)
+        * [Deepseek从入门到精通（完整版）](./13_第三方/03_OpenAI/08-Deepseek从入门到精通（完整版）.md)
     * 04_WeChat
         * [企业微信第三方应用接入全流程java版](./13_第三方/04_WeChat/01-企业微信第三方应用接入全流程java版.md)
     * 05_小红书
