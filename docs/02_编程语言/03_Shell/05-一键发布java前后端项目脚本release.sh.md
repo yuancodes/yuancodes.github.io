@@ -1,5 +1,5 @@
 ---
-title: 05-一键发布java前后端项目脚本
+title: 05-一键发布java前后端项目脚本release.sh
 date: 2024-1-3 17:51:34
 index_img: https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20241024151751.png
 tags:
