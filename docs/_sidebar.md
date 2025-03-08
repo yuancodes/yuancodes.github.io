@@ -17,6 +17,7 @@
         * [IDEA-基于SpringBoot的高效开发方式](./00_先利其器/01_Intellij%20IDEA/10-IDEA-基于SpringBoot的高效开发方式.md)
         * [IDEA-生成Javadoc外部文档](./00_先利其器/01_Intellij%20IDEA/11-IDEA-生成Javadoc外部文档.md)
         * [IDEA-调试Stream和Thread](./00_先利其器/01_Intellij%20IDEA/12-IDEA-调试Stream和Thread.md)
+        * [PlantUML插件快速生成时序图](./00_先利其器/01_Intellij%20IDEA/13-PlantUML插件快速生成时序图.md)
     * 02_Eclipse
         * [Eclipse常用操作](./00_先利其器/02_Eclipse/01-Eclipse常用操作.md)
         * [Eclipse常用设置](./00_先利其器/02_Eclipse/02-Eclipse常用设置.md)
@@ -452,6 +453,7 @@
         * [Jacoco+Mock+Diffblue自动生成单元测试](./09_调试测试/02_单元测试/04-Jacoco+Mock+Diffblue自动生成单元测试.md)
     * 03_压力测试
         * [Jmeter 基本使用](./09_调试测试/03_压力测试/Jmeter%20基本使用.md)
+        * [Jmeter 完整教程](./09_调试测试/03_压力测试/Jmeter%20完整教程.md)
     * 04_自动部署
         * [Jenkins自动化部署项目](./09_调试测试/04_自动部署/01-Jenkins自动化部署项目.md)
         * [Docker+Jenkins持续集成](./09_调试测试/04_自动部署/02-Docker+Jenkins持续集成.md)
@@ -510,11 +512,13 @@
         * [需求变更申请单](./12_项目管理/05_Document/11-需求变更申请单.md)
         * [质量检测报告×5](./12_项目管理/05_Document/12-质量检测报告×5.md)
         * [发布&会议&周报](./12_项目管理/05_Document/13-发布&会议&周报.md)
+        * [接口压测记录](./12_项目管理/05_Document/14-接口压测记录.md)
     * 06_PMP
         * [项目研发流程](./12_项目管理/06_PMP/01-项目研发流程.md)
         * [阿里云云效：一站式DevOps平台](./12_项目管理/06_PMP/02-阿里云云效：一站式DevOps平台.md)
         * [如何做好技术PM](./12_项目管理/06_PMP/03-如何做好技术PM.md)
         * [如何写好B端产品技术方案](./12_项目管理/06_PMP/04-如何写好B端产品技术方案.md)
+        * [技术领导力全方位实践](./12_项目管理/06_PMP/05-技术领导力全方位实践.md)
 * 13_第三方
     * 01_Baidu
         * [敏感词&图过滤](./13_第三方/01_Baidu/01-敏感词&图过滤.md)
