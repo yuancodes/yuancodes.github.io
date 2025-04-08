@@ -57,6 +57,7 @@
         * [hosts自用](./01_操作系统/05_Windows/02-hosts自用.md)
         * [10分钟搞定win11安卓子系统](./01_操作系统/05_Windows/03-10分钟搞定win11安卓子系统.md)
         * [win10或win11系统激活-纯命令](./01_操作系统/05_Windows/04-win10或win11系统激活-纯命令.md)
+        * [win11系统优化设置](./01_操作系统/05_Windows/05-win11系统优化设置.md)
 * 02_编程语言
     * 01_Java
         * 01_JavaSE
@@ -337,6 +338,8 @@
     * 02_Nginx
         * [Nginx 配置详解](./06_服务器/02_Nginx/01-Nginx%20配置详解.md)
         * [Nginx 负载均衡](./06_服务器/02_Nginx/02-Nginx%20负载均衡.md)
+    * 03_CentOS
+        * [VMware安装和配置CentOS7](./06_服务器/03_CentOS/01-VMware安装和配置CentOS7.md)
 * 07_虚拟机
     * [GC垃圾回收器](./07_虚拟机/01-GC垃圾回收器.md)
     * [JVM线程和进程调度](./07_虚拟机/02-JVM线程和进程调度.md)
@@ -345,6 +348,7 @@
     * [jstack,jmap,jstat](./07_虚拟机/05-jstack,jmap,jstat.md)
     * [4Cpu8G的JVM参数设置方案](./07_虚拟机/06-4Cpu8G的JVM参数设置方案.md)
     * [Java垃圾回收机制与优化策略](./07_虚拟机/07-Java垃圾回收机制与优化策略.md)
+    * [jvisualvm,jconsole,MAT](./07_虚拟机/08-jvisualvm,jconsole,MAT.md)
 * 08_框架技术
     * [00_主流框架和组件](./08_框架技术/00_主流框架和组件.md)
     * 01_Hexo
@@ -539,6 +543,7 @@
         * [DeepSeek提效：画图&生成sql&生成java代码](./13_第三方/03_OpenAI/09-DeepSeek提效：画图&生成sql&生成java代码.md)
     * 04_WeChat
         * [企业微信第三方应用接入全流程java版](./13_第三方/04_WeChat/01-企业微信第三方应用接入全流程java版.md)
+        * [微信服务号订阅消息开发流程](./13_第三方/04_WeChat/02-微信服务号订阅消息开发流程.md)
     * 05_小红书
         * [接入小红书开放api同步店铺数据](./13_第三方/05_小红书/01-接入小红书开放api同步店铺数据.md)
     * 06_抖音
