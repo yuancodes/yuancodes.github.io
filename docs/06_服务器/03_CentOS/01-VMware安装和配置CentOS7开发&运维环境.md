@@ -1,5 +1,5 @@
 ---
-title: 01-VMware安装和配置CentOS7
+title: 01-VMware安装和配置CentOS7开发&运维环境
 date: 2018-3-28 23:06:42
 tags:
 - CentOS
@@ -71,7 +71,7 @@ categories:
   sed -i 's/https:\/\/updates.jenkins.io\/download/https:\/\/mirrors.tuna.tsinghua.edu.cn\/jenkins/g' default.json && sed -i 's/https:\/\/www.google.com/https:\/\/www.baidu.com/g' default.json
   ```
 
-* 【Jenkins】Jenkins启动报错：AWT is not properly configured：https://blog.csdn.net/jiangjun_dao519/article/details/125620237
+* Jenkins启动报错：AWT is not properly configured：https://blog.csdn.net/jiangjun_dao519/article/details/125620237
 
 * jenkins 流水线pipeline阶段视图插件：`Pipeline stage view`
 
@@ -99,8 +99,9 @@ categories:
   
 
 * Jenkins的pipeline参考示例：
-  后端：
-
+  
+* 后端：
+  
   ```
   pipeline { 
       agent any 
@@ -239,9 +240,9 @@ categories:
   }
   ```
 
-  前端：
-
-  ```
+* 前端：
+  
+```
   pipeline { 
       agent any 
       
@@ -375,11 +376,11 @@ categories:
               }
           }
     }
-  }
+}
 ```
+
   
-  
-  
+
 * Jenkins账号权限设置：全局安全配置 - Authentication - 授权策略 - 安全矩阵 选择插件 `Role-based Authorization Strategy`
 
   https://blog.csdn.net/YZL40514131/article/details/130143433
@@ -398,7 +399,7 @@ categories:
 
 * 安装nvm
 
-  ```
+```
   #安装nvm
   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
   source ~/.bashrc
@@ -407,38 +408,39 @@ categories:
   nvm install 18.16.0
   nvm use 18.16.0
   node -v #此时node为18.16.0
-  
+
   如果报错则需要升级make和gcc：参考如下方法
-  ```
+```
 
 * 安装nvm管理node多版本：https://blog.51cto.com/qiuyue/6260438
-  比如我用的 node 16.15.1 和 18.16.0，通过 nvm list可以看到
-
+  
+* 比如我用的 node 16.15.1 和 18.16.0，通过 nvm list可以看到
+  
 * 安装nvm多版本管理后，jenkins中创建的任务可能看不到了，原因是因为中文编码问题。
-  当时手动重新新建了pipeline以及做了如下中文设置才ok。`一定要先准备好环境再开始创建构建任务！`
+  
+  * 当时手动重新新建了pipeline以及做了如下中文设置才ok。`一定要先准备好环境再开始创建构建任务！`
   
 * npm镜像源加速：https://blog.csdn.net/m0_52172586/article/details/142930356
 
 ### 一、Tomcat服务端编码修正
 
 1. 修改 `server.xml` 文件
-   在Tomcat的 `conf/server.xml` 中找到 `<Connector>` 标签，添加 `URIEncoding="UTF-8"` 参数：
 
-   ```
-   xml复制<Connector port="8080" protocol="HTTP/1.1"
+   * 在Tomcat的 `conf/server.xml` 中找到 `<Connector>` 标签，添加 `URIEncoding="UTF-8"` 参数：
+
+  ```
+   <Connector port="8080" protocol="HTTP/1.1"
               URIEncoding="UTF-8"  <!-- 新增此行 -->
               redirectPort="8443" />
-   ```
+  ```
 
    重启Tomcat生效[4](https://blog.csdn.net/ppdouble/article/details/12784475)。
 
 2. 调整日志编码配置
-   编辑 `conf/logging.properties` ，修改以下行：
+
+   * 编辑 `conf/logging.properties` ，修改以下行：
 
    ```
-   properties
-   
-   复制
    java.util.logging.ConsoleHandler.encoding  = UTF-8  # 原为GBK或其他编码则修改
    ```
 
@@ -449,48 +451,46 @@ categories:
 ### 二、Jenkins全局编码设置
 
 1. 修改JVM启动参数
-   在Tomcat的启动脚本（如 `bin/catalina.sh` ）中添加JVM编码参数：
-
-   ```
-   bash
    
-   复制
+* 在Tomcat的启动脚本（如 `bin/catalina.sh` ）中添加JVM编码参数：
+  
+   ```
    export JAVA_OPTS="-Dfile.encoding=UTF-8  -Dsun.jnu.encoding=UTF-8"   # 添加此行
    ```
-
-   重启Tomcat使配置生效[10](https://blog.csdn.net/weixin_42844971/article/details/109053781)]。
+   
+   重启Tomcat使配置生效。
 
 2. Jenkins系统环境变量配置
-   进入Jenkins的 `Manage Jenkins → System Configuration → Global properties`，勾选 **Environment variables** 并添加：
+
+   * 进入Jenkins的 `Manage Jenkins → System Configuration → Global properties`，勾选 **Environment variables** 并添加：
 
    ```
-   ini复制Key: LANG   Value: en_US.UTF-8
+   Key: LANG   Value: en_US.UTF-8
    Key: LC_ALL Value: en_US.UTF-8
    ```
 
-   此操作覆盖系统默认编码[9](https://blog.csdn.net/xiaoyang9988/article/details/84784573)]。
+   此操作覆盖系统默认编码。
 
 ------
 
 ### 三、构建脚本与日志输出修正
 
-1. Shell脚本显式指定编码
-   在Jenkins的构建脚本（如 `Execute shell`）开头添加：
-
+1. Shell脚本显式指定编码。在Jenkins的构建脚本（如 `Execute shell`）开头添加：
+   
    ```
-   bash复制export LANG="en_US.UTF-8"
+   export LANG="en_US.UTF-8"
    export LC_ALL="en_US.UTF-8"
    ```
-
-   确保子进程继承正确编码[5](https://blog.csdn.net/weixin_35353187/article/details/88776226)]。
-
-2. Maven/Gradle项目配置
-   对于Java项目，在 `pom.xml` 或 `gradle.properties` 中设置：
-
-   ```
-   properties复制# Maven
-   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> 
    
+
+确保子进程继承正确编码。
+
+2. Maven/Gradle项目配置。对于Java项目，在 `pom.xml` 或 `gradle.properties` 中设置：
+   
+   ```
+   # Maven
+   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> 
+
    # Gradle
    systemProp.file.encoding=UTF-8 
    ```
@@ -499,21 +499,20 @@ categories:
 
 ### 四、系统级语言环境检查
 
-1. 验证系统编码
-   执行 `locale` 命令查看当前编码，若未启用UTF-8，修改 `/etc/locale.conf` ：
-
+1. 验证系统编码。执行 `locale` 命令查看当前编码，若未启用UTF-8，修改 `/etc/locale.conf` ：
+   
    ```
-   ini复制LANG="en_US.UTF-8"
+   LANG="en_US.UTF-8"
    LC_ALL="en_US.UTF-8"
    ```
+   
 
-   重启系统生效[6](https://blog.csdn.net/guodong2020/article/details/118516739)]。
+重启系统生效[6](https://blog.csdn.net/guodong2020/article/details/118516739)]。
 
-2. 安装完整语言包
-   确保系统已安装中文语言支持：
-
+2. 安装完整语言包。确保系统已安装中文语言支持：
+   
    ```
-   bash复制yum install glibc-common -y
+   yum install glibc-common -y
    localedef -c -f UTF-8 -i en_US en_US.UTF-8
    ```
 
@@ -521,10 +520,8 @@ categories:
 
 ### 五、浏览器与缓存处理
 
-1. 清除浏览器缓存
-   使用Chrome/Firefox的隐身模式访问Jenkins，排除缓存干扰[9](https://blog.csdn.net/xiaoyang9988/article/details/84784573)]。
-2. 调整Jenkins界面编码
-   在 `Manage Jenkins → Configure System` 中，找到 **Locale** 配置项，强制设置为 `zh_CN.UTF-8` 并重启服务[9](https://blog.csdn.net/xiaoyang9988/article/details/84784573)]。
+1. 清除浏览器缓存。使用Chrome/Firefox的隐身模式访问Jenkins，排除缓存干扰[9](https://blog.csdn.net/xiaoyang9988/article/details/84784573)]。
+2. 调整Jenkins界面编码。在 `Manage Jenkins → Configure System` 中，找到 **Locale** 配置项，强制设置为 `zh_CN.UTF-8` 并重启服务。
 
 ------
 
@@ -533,17 +530,14 @@ categories:
 1. 查看构建日志文件编码：
 
    ```
-   bash
-   
-   复制
    file -i Jenkins工作空间路径/builds/*/log
    ```
-
+   
 2. 若输出 `charset=utf-8` 表示配置生效。
 
 ------
 
-通过以上步骤，90%的中文乱码问题可解决。若仍存在问题，需检查应用程序自身是否强制指定了编码（如日志框架配置）[8](https://blog.csdn.net/a350301941/article/details/90148765)]。
+通过以上步骤，90%的中文乱码问题可解决。若仍存在问题，需检查应用程序自身是否强制指定了编码（如日志框架配置）。
 
 
 
@@ -564,8 +558,9 @@ categories:
 * 环境搭建和使用：https://blog.csdn.net/qq_31725371/article/details/114697770
 
 * prometheusv2.25.0-linux-amd64单独下载（实测迅雷最快）：https://github.com/prometheus/prometheus/releases?page=17
-  prometheus.yml配置参考：
-
+  
+* prometheus.yml配置参考：
+  
   ```yml
   scrape_configs:
     # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
@@ -592,7 +587,7 @@ categories:
         replacement: $1            # 直接替换 
   ```
 
-  
+
 
 * grafana单独下载：https://mirrors.tuna.tsinghua.edu.cn/grafana/yum/rpm/Packages/grafana-7.4.3-1.x86_64.rpm
 
@@ -609,7 +604,8 @@ categories:
 * java springboot项目接入：
   
 * 依赖添加。版本可以自动关联，不需要对应，比如springboot2.5.x对应是1.7.x会自动拉取：
-    注意context-path，eg：https://localhost:8080/webmanage/actuator/prometheus
+  
+  * 注意context-path，eg：https://localhost:8080/webmanage/actuator/prometheus
   
   ```xml
           <dependency>
@@ -661,8 +657,454 @@ categories:
 * grafana dashboards官方可视化模版：https://grafana.com/grafana/dashboards/
 
 * grafana dashboards常用模版推荐：https://blog.csdn.net/sdhzdtwhm/article/details/135546426
-  java服务监控模版id：12856
-  centos服务器主机监控模版id：12633
-
+  
+  * java服务监控模版id：12856
+* centos服务器主机监控模版id：12633
+  
 * grafana 报警规则官方中文文档：https://grafana.org.cn/docs/grafana/latest/alerting/fundamentals/alert-rules/
-* grafana 邮件告警&webhook告警：
+
+
+
+## Sonar代码扫描-增量
+
+> 在sonar中环境和版本配置比较重要
+>
+> \#在sonar现在的版本中已经不支持mysql了,推荐使用postsql
+>
+> 推荐sonar 9.9.4 java 17 postsql 15 
+
+* sonar10.4基于jdk17，下载sonar：https://www.sonarsource.com/products/sonarqube/downloads/historical-downloads/
+
+* 安装sonar：
+  * https://www.cnblogs.com/wutou/p/17458707.html
+  * https://blog.csdn.net/weixin_50271247/article/details/119756146
+  
+* sonar最全使用教程：https://blog.csdn.net/tongfj/article/details/125751659
+
+* 报错问题解决：
+
+  * 发现sonar.log报错如下：
+
+    ```
+    INFO app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+    ERROR app[][o.e.c.RestHighLevelClient] Failed to parse info response
+    6 java.lang.IllegalStateException: Unsupported Content-Type: text/html;charset=UTF-8
+    ```
+
+  * 发现es.log报错如下：
+
+    ```
+    ERROR es[][o.e.b.Bootstrap] Exception
+    java.lang.RuntimeException: can not run elasticsearch as root
+    ```
+
+  * 原因：`因为elasticsearch强制要求非root用户才能启动`。
+
+  * 解决过程：
+
+    ```bash
+    # 创建名为 sonar 的用户（可自定义名称）
+    useradd sonar 
+    # 设置密码（可选），密码也是 sonar 需要输入两遍
+    passwd sonar 
+    # 重命名了一下sonarqube目录
+    mv sonarqube-9.9.8.100196 sonarqube
+    # 替换为你的 SonarQube 实际路径 
+    chown -R sonar:sonar /opt/sonar/sonarqube
+    
+    --- 如下步骤也作为重启的必要步骤 Begin ---
+    # 清理旧数据【关键步骤】：删除 Elasticsearch 的临时文件和锁文件
+    rm -rf /opt/sonar/sonarqube/temp/* && rm -rf /opt/sonar/sonarqube/data/es8/node.lock
+    # 切换到 sonar 用户，才能去启动 sonar
+    su - sonar
+    # 启动 SonarQube（需进入安装目录的 bin 目录）
+    cd /opt/sonar/sonarqube/bin/linux-x86-64
+    ./sonar.sh start
+    # 或
+    ./sonar.sh restart
+    --- 如上步骤也作为重启的必要步骤 End ---
+    ```
+    
+  * 启动还是失败，发现es端口被占用了，日志es.log下：
+
+  ```
+  ERROR es[][o.e.b.Bootstrap] Exception
+     54 org.elasticsearch.http.BindHttpException: Failed to bind to 127.0.0.1:9001
+  Caused by: java.net.BindException: Address already in use
+  ```
+
+  * 修改es默认端口号为 9200
+
+    ```yml
+  #vi /opt/sonar/sonarqube/elasticsearch/config/elasticsearch.yml
+  http.port: 9200
+    ```
+
+    同步修改sonar.properties中的es端口：
+
+    ```properties
+  #vi /opt/sonar/sonarqube/conf/sonar.properties
+  sonar.search.port=9200
+  sonar.web.port=9000 #默认值根据情况修改
+    ```
+
+  * 启动成功！
+
+  ```
+    查看WEB界面 默认访问地址：http://ip:9000，默认账号:admin  密码: admin
+    登录成功后会强制要求更改密码。
+  ```
+
+* 汉化：
+
+![img](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20250411085338.png)
+
+手动去下载汉化插件包:
+
+打开页面：https://github.com/SonarQubeCommunity/sonar-l10n-zh/releases/latest
+
+下载对应 sonarqube 的版本，比如我的是 9.9 版本，下载地址为：
+
+```
+wget https://github.com/xuhuisheng/sonar-l10n-zh/releases/download/sonar-l10n-zh-plugin-9.9/sonar-l10n-zh-plugin-9.9.jar
+```
+
+将插件放置到这个 ~/sonarqube/extensions/plugins 目录下，然后重启 sonar 服务。
+
+> 如果wget很慢的话，可以使用windows的迅雷下载后，ftp工具将jar包推送到服务器制定目录。
+
+* mvn扫描代码质量（参考方法二）：https://cloud.tencent.com/developer/article/1496871
+
+  ```bash
+  #sonar令牌：
+  配置全局分析令牌: sqa_6c6e7c4f7cc5012b07df283ad05b5c619e31xxxx
+  #比如java项目，到java项目目录下运行该命令进行代码质量扫描
+  mvn sonar:sonar \
+      -Dmaven.test.skip=true \
+      -Dsonar.host.url=http://localhost:9000 \
+      -Dsonar.login=sqa_6c6e7c4f7cc5012b07df283ad05b5c619e31xxxx \
+      -Dsonar.java.binaries=target/sonar \
+      -Dsonar.projectKey=project_a \    #用于api接口请求时使用的projectKey
+      -Dsonar.projectName=ProjectA \    #显示在sonar的web界面的项目名
+      -Dsonar.analysis.date=20xx-04-01
+  #    -Dsonar.branch.name=test
+  
+  #eg: 真实例子
+  + cd /root/jiechu-project/wangxiao
+  + mvn sonar:sonar -Dmaven.test.skip=true -Dsonar.host.url=http://localhost:9000 -Dsonar.login=sqa_6c6e7c4f7cc5012b07df283ad05b5c619e31xxxx -Dsonar.java.binaries=/root/jiechu-project/wangxiao/target/sonar -Dsonar.projectKey=wangxiao -Dsonar.projectName=wangxiao -Dsonar.analysis.date=2025-04-11
+  ```
+
+* 如果要使用 -Dsonar.branch.name=test 指定分支扫描指令，需要安装插件 Sonarqube Community Branch Plugin
+
+  * 插件地址：https://github.com/mc1arke/sonarqube-community-branch-plugin
+
+  * 插件版本对应关系：sonar 9.9 对应插件版本 1.14.0
+
+  * 下载1.14.0 版本（迅雷下载本地ftp传上去，记得重启）：
+
+    ```
+    wget https://github.com/mc1arke/sonarqube-community-branch-plugin/releases/download/1.14.0/sonarqube-community-branch-plugin-1.14.0.jar
+    ```
+
+    `指定分支的效果没有验证成功，暂时保持以test为验证代码核心分支`。
+
+* 获取sonar扫描结果api：
+
+  ```json
+  curl http://182.92.171.35:9000/api/components/search?qualifiers=TRK&q=wangxiao
+  
+  {
+    "paging": {
+      "pageIndex": 1,
+      "pageSize": 100,
+      "total": 1
+    },
+    "components": [
+      {
+        "key": "com.ruoyi:ruoyi",
+        "name": "wangxiao",
+        "qualifier": "TRK",
+        "project": "com.ruoyi:ruoyi"
+      }
+    ]
+  }
+  
+  
+  key 即为 projectKey
+  
+  curl -s -u sqa_6c6e7c4f7cc5012b07df283ad05b5c619e31xxxx: http://182.92.171.35:9000/api/qualitygates/project_status?projectKey=com.ruoyi:ruoyi
+  //返回通过的情况：
+  {
+      "projectStatus": {
+          "status": "OK",
+          "conditions": [
+              {
+                  "status": "OK",
+                  "metricKey": "new_reliability_rating",
+                  "comparator": "GT",
+                  "periodIndex": 1,
+                  "errorThreshold": "1",
+                  "actualValue": "1"
+              },
+              {
+                  "status": "OK",
+                  "metricKey": "new_security_rating",
+                  "comparator": "GT",
+                  "periodIndex": 1,
+                  "errorThreshold": "1",
+                  "actualValue": "1"
+              },
+              {
+                  "status": "OK",
+                  "metricKey": "new_maintainability_rating",
+                  "comparator": "GT",
+                  "periodIndex": 1,
+                  "errorThreshold": "1",
+                  "actualValue": "1"
+              }
+          ],
+          "periods": [
+              {
+                  "index": 1,
+                  "mode": "NUMBER_OF_DAYS",
+                  "date": "2025-04-11T13:56:53+0800",
+                  "parameter": "30"
+              }
+          ],
+          "ignoredConditions": false,
+          "period": {
+              "mode": "NUMBER_OF_DAYS",
+              "date": "2025-04-11T13:56:53+0800",
+              "parameter": "30"
+          },
+          "caycStatus": "compliant"
+      }
+  }
+  
+  //返回未通过的情况：
+  {
+      "projectStatus": {
+          "status": "ERROR",
+          "conditions": [
+              {
+                  "status": "ERROR",
+                  "metricKey": "new_reliability_rating",
+                  "comparator": "GT",
+                  "periodIndex": 1,
+                  "errorThreshold": "1",
+                  "actualValue": "5"
+              },
+              {
+                  "status": "ERROR",
+                  "metricKey": "new_security_rating",
+                  "comparator": "GT",
+                  "periodIndex": 1,
+                  "errorThreshold": "1",
+                  "actualValue": "5"
+              },
+              {
+                  "status": "OK",
+                  "metricKey": "new_maintainability_rating",
+                  "comparator": "GT",
+                  "periodIndex": 1,
+                  "errorThreshold": "1",
+                  "actualValue": "1"
+              },
+              {
+                  "status": "ERROR",
+                  "metricKey": "new_security_hotspots_reviewed",
+                  "comparator": "LT",
+                  "periodIndex": 1,
+                  "errorThreshold": "100",
+                  "actualValue": "0.0"
+              }
+          ],
+          "periods": [
+              {
+                  "index": 1,
+                  "mode": "PREVIOUS_VERSION",
+                  "date": "2025-04-11T14:23:06+0800"
+              }
+          ],
+          "ignoredConditions": false,
+          "period": {
+              "mode": "PREVIOUS_VERSION",
+              "date": "2025-04-11T14:23:06+0800"
+          },
+          "caycStatus": "compliant"
+      }
+  }
+  ```
+
+* 加入jenkins pipeline中 groovy 语法的脚本：
+
+  * 针对java后端项目
+
+  ```groovy
+          stage('项目编译') {...} //需要先进行项目编译才能去扫描
+          stage('代码扫描') {
+              tools { jdk 'Java17' }
+              steps {
+                  script {
+                      sh 'java --version'
+                      if (rollbackFlag == "true") {
+                          sh 'echo 回滚操作，跳过拉取代码'
+                      } else {
+                          sh 'echo 代码扫描'
+                          // git最近一次提交的文件
+                          def changedFiles = sh(script: "cd ${projectPath}/${projectName} && git diff --name-only HEAD~1 HEAD | xargs -I{} realpath {}", returnStdout: true).trim()
+                          def inclusions = changedFiles.replace('\n', ',')
+                          // 使用双引号让变量插值生效
+                          sh "echo 本次Git提交增量的文件为：${inclusions}"
+                          sh "cd ${projectPath}/${projectName} && mvn sonar:sonar -Dmaven.test.skip=true -Dsonar.host.url=http://localhost:9000 -Dsonar.login=sqa_6c6e7c4f7cc5012b07df283ad05b5c619e31cd11 -Dsonar.inclusions=${inclusions} -Dsonar.java.binaries=${projectPath}/${projectName}/target/sonar -Dsonar.projectKey=${projectName} -Dsonar.projectName=${projectName} -Dsonar.analysis.date=2025-04-11"
+                          sh 'echo 代码扫描完成'
+                          sh 'sleep 5'
+                          sh 'echo 开始确认代码扫描结果'
+                          // 执行命令并获取输出
+                          def commandOutput = sh(
+                              script: "curl -s -u sqa_6c6e7c4f7cc5012b07df283ad05b5c619e31cd11: http://localhost:9000/api/qualitygates/project_status?projectKey=${projectName} | jq -r '.projectStatus.status'",
+                              returnStdout: true
+                          ).trim()
+              
+                          // 解析结果
+                          def SCAN_RES = commandOutput
+                          sh "echo 代码扫描结果：${SCAN_RES}"
+                          
+                          if (SCAN_RES != "OK") {
+                              error "代码质量扫描未通过，详情查看地址(账号:viewer 密码:jcjy123456)：http://182.92.171.35:9000/dashboard?id=${projectName}" 
+                          }
+                          sh 'echo 确认代码扫描结果通过'
+                      }
+                  }
+              }
+          }
+  ```
+
+  * 针对vue前端项目，前端使用 sonar-scanner 工具进行扫描，命令使用方式类似java的 mvn。
+  补充说明：当前安装的sonarqube是9.9版本，对应sonar-scanner的版本是4.8，别问怎么知道，搜一下即可
+    下载地址：[sonar-scanner4.8-linux-x64.zip](https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.8.0.2856-linux.zip?_gl=1*m4ahcr*_gcl_au*MzExMzIzMTMyLjE3NDQxNzk4NDY.*_ga*MTM5MzI1NTIyNi4xNzQ0MTc5ODI1*_ga_9JZ0GZ5TC6*MTc0NDQyMTkwOS4yLjEuMTc0NDQyMjQ2OS42MC4wLjA.)
+  环境变量：
+    
+  ```bash
+    # vi /etc/profile
+    
+    #sonar-scanner 对应自己的解压路径即可
+    export SONAR_SCANNER_HOME=/opt/sonar/sonar-scanner
+    export PATH=$PATH:$SONAR_SCANNER_HOME/bin
+    
+    # source /etc/profile
+    
+    # sonar-scanner --version
+    NFO: Scanner configuration file: /opt/sonar/sonar-scanner/conf/sonar-scanner.properties
+    INFO: Project root configuration file: NONE
+    INFO: SonarScanner 4.8.0.2856
+    INFO: Java 11.0.17 Eclipse Adoptium (64-bit)
+    INFO: Linux 3.10.0-1160.62.1.el7.x86_64 amd64
+  ```
+
+    命令方式与mvn命令方式基本一致：
+
+    ```bash
+    #sonar令牌：
+    配置全局分析令牌: sqa_6c6e7c4f7cc5012b07df283ad05b5c619e31xxxx
+    #比如java项目，到java项目目录下运行该命令进行代码质量扫描
+    sonar-scanner \
+        -Dsonar.host.url=http://localhost:9000 \
+        -Dsonar.login=sqa_6c6e7c4f7cc5012b07df283ad05b5c619e31xxxx \
+        -Dsonar.sources=. \
+        -Dsonar.projectKey=project_a \    #用于api接口请求时使用的projectKey
+        -Dsonar.projectName=ProjectA \    #显示在sonar的web界面的项目名
+        -Dsonar.analysis.date=20xx-04-01
+    #    -Dsonar.branch.name=test
+    
+    #eg：真实例子
+    + cd /root/front-project/online-school-webmanage
+    + /opt/sonar/sonar-scanner/bin/sonar-scanner -Dsonar.host.url=http://localhost:9000 -Dsonar.login=sqa_6c6e7c4f7cc5012b07df283ad05b5c619e31xxxx -Dsonar.sources=/root/front-project/online-school-webmanage/src -Dsonar.projectKey=online-school-webmanage -Dsonar.projectName=online-school-webmanage '-Dsonar.exclusions=/root/front-project/online-school-webmanage/node_modules/**,/root/front-project/online-school-webmanage/dist/**' -Dsonar.language=js -Dsonar.javascript.file.suffixes=.vue,.js -Dsonar.analysis.date=2025-04-11
+    ```
+
+    因此jenkins中的pipeline中的groovy脚本为：
+
+    ```groovy
+            stage('项目编译') {...}
+            stage('代码扫描') {
+                steps {
+                    script {
+                        if (rollbackFlag == "true") {
+                            sh 'echo 回滚操作，跳过拉取代码'
+                        } else {
+                            sh 'echo 代码扫描'
+                            sh 'cd ${projectPath}/${projectName} && /opt/sonar/sonar-scanner/bin/sonar-scanner -Dsonar.host.url=http://localhost:9000 -Dsonar.login=sqa_6c6e7c4f7cc5012b07df283ad05b5c619e31cd11 -Dsonar.sources=${projectPath}/${projectName}/src -Dsonar.projectKey=online-school-webmanage -Dsonar.projectName=online-school-webmanage -Dsonar.exclusions=${projectPath}/${projectName}/node_modules/**,${projectPath}/${projectName}/dist/** -Dsonar.language=js -Dsonar.javascript.file.suffixes=.vue,.js -Dsonar.analysis.date=2025-04-11'
+                            sh 'echo 代码扫描完成'
+                            sh 'sleep 5'
+                            sh 'echo 开始确认代码扫描结果'
+                            // 执行命令并获取输出
+                            def commandOutput = sh(
+                                script: "curl -s -u sqa_6c6e7c4f7cc5012b07df283ad05b5c619e31cd11: http://localhost:9000/api/qualitygates/project_status?projectKey=${projectName} | jq -r '.projectStatus.status'",
+                                returnStdout: true
+                            ).trim()
+                
+                            // 解析结果
+                            def SCAN_RES = commandOutput
+                            sh "echo 代码扫描结果：${SCAN_RES}"
+                            
+                            if (SCAN_RES != "OK") {
+                                error "代码质量扫描未通过，详情查看地址(账号:viewer 密码:jcjy123456)：http://182.92.171.35:9000/dashboard?id=${projectName}" 
+                            }
+                            sh 'echo 确认代码扫描结果通过'
+                        }
+                    }
+                }
+            }
+    ```
+
+* 按照git最新提交记录的增量式扫描配置如下：
+
+  ```groovy
+         stage('代码扫描') {
+              steps {
+                  script {
+                      if (rollbackFlag == "true") {
+                          sh 'echo 回滚操作，跳过拉取代码'
+                      } else {
+                          sh 'echo 代码扫描'
+                          // git最近一次提交的文件
+                          def changedFiles = sh(script: "cd ${projectPath}/${projectName} && git diff --name-only HEAD~1 HEAD | xargs -I{} realpath {}", returnStdout: true).trim()
+                          def inclusions = changedFiles.replace('\n', ',')
+                          // 使用双引号让变量插值生效
+                          sh "echo 本次Git提交增量的文件为：${inclusions}"
+                          sh "cd ${projectPath}/${projectName} && /opt/sonar/sonar-scanner/bin/sonar-scanner -Dsonar.host.url=http://localhost:9000 -Dsonar.login=sqa_6c6e7c4f7cc5012b07df283ad05b5c619e31cd11 -Dsonar.sources=${projectPath}/${projectName}/src -Dsonar.projectKey=${projectName} -Dsonar.projectName=${projectName} -Dsonar.inclusions=${inclusions} -Dsonar.exclusions=${projectPath}/${projectName}/node_modules/**,${projectPath}/${projectName}/dist/** -Dsonar.language=js -Dsonar.javascript.file.suffixes=.vue,.js -Dsonar.analysis.date=2025-04-11"
+                          sh 'echo 代码扫描完成'
+                          sh 'sleep 5'
+                          sh 'echo 开始确认代码扫描结果'
+                          // 执行命令并获取输出
+                          def commandOutput = sh(
+                              script: "curl -s -u sqa_6c6e7c4f7cc5012b07df283ad05b5c619e31cd11: http://localhost:9000/api/qualitygates/project_status?projectKey=${projectName} | jq -r '.projectStatus.status'",
+                              returnStdout: true
+                          ).trim()
+              
+                          // 解析结果
+                          def SCAN_RES = commandOutput
+                          sh "echo 代码扫描结果：${SCAN_RES}"
+                          
+                          if (SCAN_RES != "OK") {
+                              error "代码质量扫描未通过，详情查看地址(账号:viewer 密码:jcjy123456)：http://182.92.171.35:9000/dashboard?id=${projectName}" 
+                          }
+                          sh 'echo 确认代码扫描结果通过'
+                      }
+                  }
+              }
+          }
+  ```
+
+  
+
+
+
+
+
+
+
+
+
+
+
