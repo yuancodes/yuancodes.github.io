@@ -330,6 +330,7 @@
         * [linux磁盘与内存管理](./06_服务器/00_Server/linux磁盘与内存管理.md)
         * [ssh使用详解](./06_服务器/00_Server/ssh使用详解.md)
         * [systemctl使用详解](./06_服务器/00_Server/systemctl使用详解.md)
+        * [免费SSL证书配置https](./06_服务器/00_Server/免费SSL证书配置https.md)
         * [安卓旧手机(小米5)搭建局域网服务器](./06_服务器/00_Server/安卓旧手机(小米5)搭建局域网服务器.md)
     * 01_Tomcat
         * [服务器搭建和部署](./06_服务器/01_Tomcat/01-服务器搭建和部署.md)

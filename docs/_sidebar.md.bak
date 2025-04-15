@@ -340,7 +340,7 @@
         * [Nginx 配置详解](./06_服务器/02_Nginx/01-Nginx%20配置详解.md)
         * [Nginx 负载均衡](./06_服务器/02_Nginx/02-Nginx%20负载均衡.md)
     * 03_CentOS
-        * [VMware安装和配置CentOS7](./06_服务器/03_CentOS/01-VMware安装和配置CentOS7.md)
+        * [VMware安装和配置CentOS7开发&运维环境](./06_服务器/03_CentOS/01-VMware安装和配置CentOS7开发&运维环境.md)
 * 07_虚拟机
     * [GC垃圾回收器](./07_虚拟机/01-GC垃圾回收器.md)
     * [JVM线程和进程调度](./07_虚拟机/02-JVM线程和进程调度.md)
