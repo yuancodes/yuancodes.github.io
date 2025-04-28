@@ -327,11 +327,12 @@
         * [MongoDB集成到SpringBoot](./05_数据库/05_MongoDB/05-MongoDB集成到SpringBoot.md)
 * 06_服务器
     * 00_Server
-        * [linux磁盘与内存管理](./06_服务器/00_Server/linux磁盘与内存管理.md)
-        * [ssh使用详解](./06_服务器/00_Server/ssh使用详解.md)
-        * [systemctl使用详解](./06_服务器/00_Server/systemctl使用详解.md)
-        * [免费SSL证书配置https](./06_服务器/00_Server/免费SSL证书配置https.md)
-        * [安卓旧手机(小米5)搭建局域网服务器](./06_服务器/00_Server/安卓旧手机(小米5)搭建局域网服务器.md)
+        * [ssh使用详解](./06_服务器/00_Server/01-ssh使用详解.md)
+        * [安卓旧手机(小米5)搭建局域网服务器](./06_服务器/00_Server/02-安卓旧手机(小米5)搭建局域网服务器.md)
+        * [linux磁盘与内存管理](./06_服务器/00_Server/03-linux磁盘与内存管理.md)
+        * [systemctl使用详解](./06_服务器/00_Server/04-systemctl使用详解.md)
+        * [免费SSL证书配置https](./06_服务器/00_Server/05-免费SSL证书配置https.md)
+        * [Linux服务器应急排查实战指南](./06_服务器/00_Server/06-Linux服务器应急排查实战指南.md)
     * 01_Tomcat
         * [服务器搭建和部署](./06_服务器/01_Tomcat/01-服务器搭建和部署.md)
         * [自写Tomcat服务器](./06_服务器/01_Tomcat/02-自写Tomcat服务器.md)
