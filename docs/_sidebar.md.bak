@@ -333,6 +333,7 @@
         * [systemctl使用详解](./06_服务器/00_Server/04-systemctl使用详解.md)
         * [免费SSL证书配置https](./06_服务器/00_Server/05-免费SSL证书配置https.md)
         * [Linux服务器应急排查实战指南](./06_服务器/00_Server/06-Linux服务器应急排查实战指南.md)
+        * [rsync使用详解](./06_服务器/00_Server/07-rsync使用详解.md)
     * 01_Tomcat
         * [服务器搭建和部署](./06_服务器/01_Tomcat/01-服务器搭建和部署.md)
         * [自写Tomcat服务器](./06_服务器/01_Tomcat/02-自写Tomcat服务器.md)
