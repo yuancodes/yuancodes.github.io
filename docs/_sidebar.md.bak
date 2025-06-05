@@ -449,6 +449,8 @@
         * [2小时入门Netty](./08_框架技术/17_Netty/2小时入门Netty.md)
     * 18_Aspose
         * [Aspose操作word文档](./08_框架技术/18_Aspose/Aspose操作word文档.md)
+    * 19_JeecgBoot
+        * [基于JDK17的JeecgBoot AI低代码平台](./08_框架技术/19_JeecgBoot/基于JDK17的JeecgBoot%20AI低代码平台.md)
 * 09_调试测试
     * 01_日志记录
         * [日志方案×2](./09_调试测试/01_日志记录/01-日志方案×2.md)
