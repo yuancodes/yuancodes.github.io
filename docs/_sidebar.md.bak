@@ -546,6 +546,7 @@
         * [DeepSeek从入门到精通（完整版）](./13_第三方/03_OpenAI/08-DeepSeek从入门到精通（完整版）.md)
         * [DeepSeek提效：画图&生成sql&生成java代码](./13_第三方/03_OpenAI/09-DeepSeek提效：画图&生成sql&生成java代码.md)
         * [SpringBoot+MCP整合AI与服务的桥梁](./13_第三方/03_OpenAI/10-SpringBoot+MCP整合AI与服务的桥梁.md)
+        * [【AI智能体】Coze 搭建个人旅游规划助手实战详解](./13_第三方/03_OpenAI/11-【AI智能体】Coze%20搭建个人旅游规划助手实战详解.md)
     * 04_WeChat
         * [企业微信第三方应用接入全流程java版](./13_第三方/04_WeChat/01-企业微信第三方应用接入全流程java版.md)
         * [微信服务号订阅消息开发流程](./13_第三方/04_WeChat/02-微信服务号订阅消息开发流程.md)
