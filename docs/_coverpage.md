@@ -6,9 +6,10 @@
 
 > Love Your Code As You Love Yourself  .
 
+- 万物伊始，`效率`为纲。
+- 大道至简，代码之光。
 - 所有过往，皆为序章。
-- 万物伊始，效率本源。
-- 代码之禅，大道至简！
+- `全栈`工程，心之所向！
 
 [Github](https://janycode.github.io/)
 [进入首页](_sidebar.md)
