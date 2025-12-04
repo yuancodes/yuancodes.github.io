@@ -6,7 +6,7 @@ tags:
 - 验证码
 categories: 
 - 04_大前端
-- 06_JavaScript
+- 03_JavaScript
 ---
 
 ### 0. 环境准备

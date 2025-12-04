@@ -6,7 +6,7 @@ tags:
 - Ajax
 categories: 
 - 04_大前端
-- 06_JavaScript
+- 03_JavaScript
 ---
 
 ### 1. Ajax 异步请求 说明

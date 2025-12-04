@@ -6,7 +6,7 @@ tags:
 - JSON
 categories: 
 - 04_大前端
-- 06_JavaScript
+- 03_JavaScript
 ---
 
 JSON字符串在线格式化工具：[JSON在线格式化](https://c.runoob.com/front-end/53)

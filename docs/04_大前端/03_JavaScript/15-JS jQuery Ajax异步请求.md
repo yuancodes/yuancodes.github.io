@@ -6,7 +6,7 @@ tags:
 - Ajax
 categories: 
 - 04_大前端
-- 06_JavaScript
+- 03_JavaScript
 ---
 
 \>> [jQuery 参考手册](https://www.w3school.com.cn/jquery/jquery_reference.asp)

@@ -7,7 +7,7 @@ tags:
 - DOM
 categories: 
 - 04_大前端
-- 06_JavaScript
+- 03_JavaScript
 ---
 
 
