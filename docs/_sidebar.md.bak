@@ -32,7 +32,7 @@
     * 06_Navicat Premium
         * [Navicat Premium 数据库连接管理与成员协作](./00_先利其器/06_Navicat%20Premium/Navicat%20Premium%20数据库连接管理与成员协作.md)
     * 07_Visual Studio Code
-        * [VSCode安装和配置](./00_先利其器/07_Visual%20Studio%20Code/01-VSCode安装和配置.md)
+        * [VSCode安装&配置&调试](./00_先利其器/07_Visual%20Studio%20Code/01-VSCode安装&配置&调试.md)
     * 08_AList
         * [AList搭建网盘挂载硬盘并挂载网络资源](./00_先利其器/08_AList/AList搭建网盘挂载硬盘并挂载网络资源.md)
 * 01_操作系统
