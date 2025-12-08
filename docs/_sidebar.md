@@ -33,6 +33,7 @@
         * [Navicat Premium 数据库连接管理与成员协作](./00_先利其器/06_Navicat%20Premium/Navicat%20Premium%20数据库连接管理与成员协作.md)
     * 07_Visual Studio Code
         * [VSCode安装&配置&调试](./00_先利其器/07_Visual%20Studio%20Code/01-VSCode安装&配置&调试.md)
+        * [VSCode好用指南](./00_先利其器/07_Visual%20Studio%20Code/02-VSCode好用指南.md)
     * 08_AList
         * [AList搭建网盘挂载硬盘并挂载网络资源](./00_先利其器/08_AList/AList搭建网盘挂载硬盘并挂载网络资源.md)
 * 01_操作系统
@@ -222,8 +223,9 @@
         * [注册页demo](./04_大前端/02_CSS/13-注册页demo.md)
     * 03_JavaScript
         * [JS 基本入门](./04_大前端/03_JavaScript/01-JS%20基本入门.md)
+        * [JS BOM和DOM](./04_大前端/03_JavaScript/02-JS%20BOM和DOM.md)
         * [JS 基本语法](./04_大前端/03_JavaScript/11-JS%20基本语法.md)
-        * [JS BOM+DOM](./04_大前端/03_JavaScript/12-JS%20BOM+DOM.md)
+        * [JS BOM+DOM（old）](./04_大前端/03_JavaScript/12-JS%20BOM+DOM（old）.md)
         * [JS Ajax异步请求](./04_大前端/03_JavaScript/13-JS%20Ajax异步请求.md)
         * [JS jQuery 基础](./04_大前端/03_JavaScript/14-JS%20jQuery%20基础.md)
         * [JS jQuery Ajax异步请求](./04_大前端/03_JavaScript/15-JS%20jQuery%20Ajax异步请求.md)
