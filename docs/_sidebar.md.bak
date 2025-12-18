@@ -218,8 +218,7 @@
         * [网格布局](./04_大前端/02_CSS/10-网格布局.md)
         * [使用方式,CSS选择器](./04_大前端/02_CSS/11-使用方式,CSS选择器.md)
         * [CSS属性,CSS盒子](./04_大前端/02_CSS/12-CSS属性,CSS盒子.md)
-        * [注册页demo](./04_大前端/02_CSS/13-注册页demo.md)
-        * [Sass教程](./04_大前端/02_CSS/14-Sass教程.md)
+        * [Sass教程](./04_大前端/02_CSS/13-Sass教程.md)
     * 03_JavaScript
         * [JS 基本入门](./04_大前端/03_JavaScript/01-JS%20基本入门.md)
         * [JS BOM和DOM](./04_大前端/03_JavaScript/02-JS%20BOM和DOM.md)
@@ -258,8 +257,8 @@
         * [validate.js校验插件](./04_大前端/07_Bootstrap/03-validate.js校验插件.md)
         * [BootstrapValidator表单校验](./04_大前端/07_Bootstrap/04-BootstrapValidator表单校验.md)
         * [ECharts数据可视化图表](./04_大前端/07_Bootstrap/05-ECharts数据可视化图表.md)
-        * [demo：旅游网首页](./04_大前端/07_Bootstrap/06-demo：旅游网首页.md)
-        * [demo：婚礼汇](./04_大前端/07_Bootstrap/07-demo：婚礼汇.md)
+        * [仿：旅游网](./04_大前端/07_Bootstrap/06-仿：旅游网.md)
+        * [仿：婚恋网](./04_大前端/07_Bootstrap/07-仿：婚恋网.md)
     * 08_LayUI
         * [LayUI框架使用](./04_大前端/08_LayUI/01-LayUI框架使用.md)
         * [LayUI快速搭建后台系统](./04_大前端/08_LayUI/02-LayUI快速搭建后台系统.md)
