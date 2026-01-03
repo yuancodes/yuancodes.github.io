@@ -124,6 +124,35 @@ Java EE API 官方文档： [1.7英文](https://docs.oracle.com/javaee/7/api/toc
 |  31  |    <span style="color:orange">FinalShell</span>    | [百度网盘](https://pan.baidu.com/s/1DYzmAMPyPeLi-pbAGJbu_A)  |          国产免费最好用的终端连接工具，提取码: 81nk          |
 |  32  |                   在线文档翻译器                   |    [在线访问](https://www.onlinedoctranslator.com/zh-CN/)    |               PDF翻译工具，无需登陆，完全免费                |
 
+<br>
+
+---
+
+### AI工具
+
+| No.  |      工具      |                      下载                      |                     备注                     |
+| :--: | :------------: | :--------------------------------------------: | :------------------------------------------: |
+|  01  | next-ai-drawio | [在线使用](https://next-ai-drawio.jiang.jp/zh) | 免费的 AI 画架构图，在线对话，基于drawio实现 |
+|  02  |    AI Short    |      [在线使用](https://www.aishort.top/)      |        多种 AI 提示词搜索、管理、共享        |
+
+
+
+<br>
+
+---
+
+### web组件库
+
+| No.  |          工具           |                         下载                          |                          备注                          |
+| :--: | :---------------------: | :---------------------------------------------------: | :----------------------------------------------------: |
+|  01  | element-ui/element-plus |        [官网](https://element-plus.org/zh-CN/)        |                   系统管理后台组件库                   |
+|  02  |          vant           |  [官网](https://vant-ui.github.io/vant/#/zh-CN/home)  |                    移动端页面组件库                    |
+|  03  |       uiverse.io        |              [官网](https://uiverse.io/)              |     最大开源UI库，适配React、Vue、Lit等，开箱即用      |
+|  04  |   VUE后台管理系统模板   |            [官网](http://vue.easydo.work/)            | 最全的前端管理系统模版开源库，含预览地址、官网、教程等 |
+|  05  |      open-lovable       | [开源地址](https://github.com/firecrawl/open-lovable) |                克隆任何网站为React应用                 |
+
+
+
 
 
 <br>
