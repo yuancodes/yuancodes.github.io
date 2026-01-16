@@ -257,7 +257,7 @@
         * [Vue3路由](./04_大前端/04_Vue/09-Vue3路由.md)
         * [vuex公共状态管理](./04_大前端/04_Vue/10-vuex公共状态管理.md)
         * [pinia公共状态管理](./04_大前端/04_Vue/11-pinia公共状态管理.md)
-        * [vue开发流程](./04_大前端/04_Vue/12-vue开发流程.md)
+        * [vite&vue区分环境配置](./04_大前端/04_Vue/12-vite&vue区分环境配置.md)
         * [ElementUI&ElementPlus](./04_大前端/04_Vue/13-ElementUI&ElementPlus.md)
         * [Vant](./04_大前端/04_Vue/14-Vant.md)
         * [Vue3.0迁移](./04_大前端/04_Vue/15-Vue3.0迁移.md)
