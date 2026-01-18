@@ -9,7 +9,7 @@
 
 <body>
     <div style="width: 100%; background: linear-gradient(135deg, #1084DA 0%, #1084DA 100%); color: white; padding: 80px 20px; text-align: center; margin-bottom: 40px; border-radius: 8px;">
-        <h1 style="font-size: 3rem; margin-bottom: 16px; font-weight: 700;">全栈技术成长指南</h1>
+        <h1 style="font-size: 3rem; margin-bottom: 16px; font-weight: 700; color: white;">全栈技术成长指南</h1>
         <p style="font-size: 1.2rem; opacity: 0.9; max-width: 800px; margin: 0 auto;">专注于 Java/SpringBoot/Vue/React 全栈开发与项目管理，分享可落地的技术方案与成长经验</p>
         <div style="margin-top: 30px;">
             <a href="https://yuancodes.github.io/#/_sidebar"
