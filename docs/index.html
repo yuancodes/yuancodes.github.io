@@ -161,6 +161,13 @@
             color: "var(--theme-color,#42b983)", //默认颜色
             height: "2px",                       //默认3px
         },
+        scrollToTop: {
+            auto: true,
+            text: '↑',
+            right: 15,
+            bottom: 15,
+            offset: 500
+        },
         //页脚插件：docsify-footer
         footer: {
             copy: '<span>Docsify &copy; since 2016</span>',
@@ -216,7 +223,8 @@
 <script src="./js/progress.min.js"></script>
 <!--百度统计: https://unpkg.com/docsify-baidu-tj@1.0.2/dist/docsify-baidu-tj.min.js-->
 <script src="./js/docsify-baidu-tj.min.js"></script>
-
+<!--回到顶部：https://gitee.com/zhengxiangqi/docsify-scroll-to-top-->
+<script src="./js/docsify-scroll-to-top.min.js"></script>
 <!--JQuery: https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js-->
 <script src="./js/jquery.min.js"></script>
 <!--解决目录使用中文时搜索栏被 encode 转码的问题：https://github.com/docsifyjs/docsify/issues/2002-->
@@ -271,30 +279,30 @@
 </script>
 
 <!-- live2d 动画-->
-<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
-<script>
-    L2Dwidget.init({
-        "model": {
-            jsonPath: "https://unpkg.com/live2d-widget-model-haruto@1.0.5/assets/haruto.model.json",
-            "scale": 1
-        },
-        "display": {
-            "position": "right",
-            "width": 100,
-            "height": 200,
-            "hOffset": 35,
-            "vOffset": -85
-        },
-        "mobile": {
-            "show": false,
-            "scale": 0.1
-        },
-        "react": {
-            "opacityDefault": 0.75,
-            "opacityOnHover": 0.2
-        }
-    });
-</script>
+<!--<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>-->
+<!--<script>-->
+<!--    L2Dwidget.init({-->
+<!--        "model": {-->
+<!--            jsonPath: "https://unpkg.com/live2d-widget-model-haruto@1.0.5/assets/haruto.model.json",-->
+<!--            "scale": 1-->
+<!--        },-->
+<!--        "display": {-->
+<!--            "position": "right",-->
+<!--            "width": 100,-->
+<!--            "height": 200,-->
+<!--            "hOffset": 35,-->
+<!--            "vOffset": -85-->
+<!--        },-->
+<!--        "mobile": {-->
+<!--            "show": false,-->
+<!--            "scale": 0.1-->
+<!--        },-->
+<!--        "react": {-->
+<!--            "opacityDefault": 0.75,-->
+<!--            "opacityOnHover": 0.2-->
+<!--        }-->
+<!--    });-->
+<!--</script>-->
 
 <!--用于鼠标放在文字上显示预览oss图片-->
 <script type="text/javascript">

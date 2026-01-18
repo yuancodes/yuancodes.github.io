@@ -6,18 +6,26 @@
   * [Java](02_编程语言/01_Java/01_JavaSE/01_基础语法/01-JDK环境搭建.md)
   * [Python](02_编程语言/02_Python/01-Python基础语法大全.md)
   * [Shell](02_编程语言/03_Shell/01-shell脚本基础语法.md)
+  * [Node](04_大前端/06_Node.js/01-Node.js基础.md)
 
 * **全栈-前端▼**
   * [Html](04_大前端/01_HTML/00-基础入门.md)
   * [CSS](04_大前端/02_CSS/00-CSS基础入门.md)
-  * [JavaScript](04_大前端/06_JavaScript/01-JS%20基本语法.md)
+  * [JavaScript](04_大前端/03_JavaScript/01-JS%20基本入门.md)
+  * [JQuery](04_大前端/03_JavaScript/09-jQuery库.md)
+  * [TypeScript](04_大前端/05_TypeScript/01-TS基础入门.md)
 
 * **全栈-框架▼**
   * [Java-Spring](08_框架技术/02_Spring/01_Core/01-Spring%20概述.md)
   * [Java-SpringMVC](08_框架技术/03_SpringMVC/01-SpringMVC%20Demo.md)
   * [Java-SpringBoot](08_框架技术/04_SpringBoot/01-SpringBoot%20Demo.md)
   * [Java-SpringCloud](08_框架技术/05_SpringCloud/Spring%20Cloud%20Alibaba快速上手.md)
+  * [Node-Express](04_大前端/06_Node.js/03-Express框架.md)
+  * [Node-Koa](04_大前端/06_Node.js/08-Koa框架.md)
   * [Vue-2.0](04_大前端/04_Vue/01-Vue2.0.md)
+  * [Vue-3.0](04_大前端/04_Vue/06-Vue3.0.md)
+  * [JS-Bootstrap](04_大前端/07_Bootstrap/01-Bootstrap框架使用.md)
+  * [JS-LayUI](04_大前端/08_LayUI/01-LayUI框架使用.md)
 
 * **全栈-组件▼**
   * [Java-配置中心-Apollo](14_微服务/02_注册中心/01-Nacos%20注册中心部署与服务注册.md)
@@ -29,6 +37,8 @@
   * [Java-高性能RPC-Dubbo](08_框架技术/11_Dubbo/4H搞定Dubbo.md)
   * [Java-网络爬虫-WebMagic](08_框架技术/08_WebMagic/WebMagic爬虫框架.md)
   * [Java-实时通信-WebSocket](08_框架技术/12_WebSocket/WebSocket聊天室实战.md)
+  * [Vue-ElementUI&Plus](04_大前端/04_Vue/13-ElementUI&ElementPlus.md)
+  * [Vue-Vant](04_大前端/04_Vue/14-Vant.md)
 
 * **数据库▼**
   * [MySQL](05_数据库/01_MySQL/02-查询语法大全.md)
@@ -36,6 +46,11 @@
   * [MyBatis-Plus](05_数据库/03_MyBatis-Plus/01-MyBatis-Plus%20入门使用.md)
   * [Redis](05_数据库/04_Redis/03-Redis%20Java+Jedis.md)
   * [MongoDB](05_数据库/05_MongoDB/00-MongoDB两小时进阶.md)
+
+* **服务器▼**
+  * [ssh](06_服务器/00_Server/01-ssh使用详解.md)
+  * [Nginx](06_服务器/02_Nginx/01-Nginx%20配置详解.md)
+  * [CentOS](06_服务器/03_CentOS/01-VMware安装和配置CentOS7开发&运维环境.md)
 
 * [**工具**](tool/README.md)
 

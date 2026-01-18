@@ -268,7 +268,11 @@
         * [Node.js基础](./04_大前端/06_Node.js/01-Node.js基础.md)
         * [Node.js路由](./04_大前端/06_Node.js/02-Node.js路由.md)
         * [Express框架](./04_大前端/06_Node.js/03-Express框架.md)
-        * [Node.js+MongoDB数据库](./04_大前端/06_Node.js/04-Node.js+MongoDB数据库.md)
+        * [Express+MongoDB数据库](./04_大前端/06_Node.js/04-Express+MongoDB数据库.md)
+        * [Express+JWT登陆鉴权](./04_大前端/06_Node.js/05-Express+JWT登陆鉴权.md)
+        * [Express文件上传](./04_大前端/06_Node.js/06-Express文件上传.md)
+        * [Express+apidoc接口文档](./04_大前端/06_Node.js/07-Express+apidoc接口文档.md)
+        * [Koa框架](./04_大前端/06_Node.js/08-Koa框架.md)
     * 07_Bootstrap
         * [Bootstrap格栅与组件](./04_大前端/07_Bootstrap/00-Bootstrap格栅与组件.md)
         * [Bootstrap框架使用](./04_大前端/07_Bootstrap/01-Bootstrap框架使用.md)
