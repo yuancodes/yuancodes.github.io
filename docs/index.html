@@ -161,13 +161,14 @@
             color: "var(--theme-color,#42b983)", //默认颜色
             height: "2px",                       //默认3px
         },
-        scrollToTop: {
-            auto: true,
-            text: '↑',
-            right: 15,
-            bottom: 15,
-            offset: 500
-        },
+        //返回顶部（废弃）
+        // scrollToTop: {
+        //     auto: true,
+        //     text: '↑',
+        //     right: 15,
+        //     bottom: 15,
+        //     offset: 500
+        // },
         //页脚插件：docsify-footer
         footer: {
             copy: '<span>Docsify &copy; since 2016</span>',
@@ -180,6 +181,8 @@
 </script>
 <!--docsify: https://cdn.bootcdn.net/ajax/libs/docsify/4.13.0/docsify.min.js-->
 <script src="./js/docsify.min.js"></script>
+<!--JQuery: https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js-->
+<script src="./js/jquery.min.js"></script>
 <!--search 全文搜索插件: https://cdn.bootcdn.net/ajax/libs/docsify/4.13.0/plugins/search.min.js-->
 <script src="./js/search.min.js"></script>
 <!--emoji 表情图标插件: https://cdn.bootcdn.net/ajax/libs/docsify/4.13.0/plugins/emoji.min.js-->
@@ -224,9 +227,30 @@
 <!--百度统计: https://unpkg.com/docsify-baidu-tj@1.0.2/dist/docsify-baidu-tj.min.js-->
 <script src="./js/docsify-baidu-tj.min.js"></script>
 <!--回到顶部：https://gitee.com/zhengxiangqi/docsify-scroll-to-top-->
-<script src="./js/docsify-scroll-to-top.min.js"></script>
-<!--JQuery: https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js-->
-<script src="./js/jquery.min.js"></script>
+<!--<script src="./js/docsify-scroll-to-top.min.js"></script>-->
+<!--回到顶部：https://github.com/Sumsung524/docsify-backTop-->
+<script src="./js/docsify-backTop.min.js"></script>
+<!--回到顶部-->
+<script>
+    docsifyBackTop = {
+        size: 64,           	// 数值，组件大小，默认值32。
+        bottom: 15,         	// 数值，组件底部偏移距离，默认值15。
+        right: 15,          	// 数值，组件右侧偏移距离，默认值15。
+        logo: '🔝',			// logo:字符串或svg矢量图代码，默认为svg代码图标。
+        bgColor: '\#20ffff'    	// 背景颜色，#fff、pink等，logo为svg图标时，不填。
+    };
+</script>
+<!--<script type="text/javascript">-->
+<!--    $(document).ready(function () {-->
+<!--        $.goup({-->
+<!--            trigger: 100,-->
+<!--            bottomOffset: 52,-->
+<!--            locationOffset: 25,-->
+<!--            //title: 'TOP',-->
+<!--            titleAsText: true-->
+<!--        });-->
+<!--    });-->
+<!--</script>-->
 <!--解决目录使用中文时搜索栏被 encode 转码的问题：https://github.com/docsifyjs/docsify/issues/2002-->
 <script>
     $(function () {
@@ -263,19 +287,6 @@
             document.title = newTitle;
         }
     })
-</script>
-
-<!--回到顶部-->
-<script type="text/javascript">
-    $(document).ready(function () {
-        $.goup({
-            trigger: 100,
-            bottomOffset: 52,
-            locationOffset: 25,
-            //title: 'TOP',
-            titleAsText: true
-        });
-    });
 </script>
 
 <!-- live2d 动画-->
