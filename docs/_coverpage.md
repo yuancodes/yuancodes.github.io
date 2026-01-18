@@ -12,4 +12,4 @@
 - **全栈**工程，心之所向！
 
 [Github](https://janycode.github.io/)
-[进入首页](_sidebar.md)
+[进入首页](_sidebar_home.md)
