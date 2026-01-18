@@ -257,7 +257,7 @@
         $('input').bind('input propertychange', function () {
             var inputVal = $(this).val();
             if (inputVal) {
-                console.log("输入搜索内容：" + inputVal);
+                //console.log("输入搜索内容：" + inputVal);
                 //必须后置回显h2标签，经测试延时100ms可以
                 setTimeout(function () {
                     $('div.matching-post a h2').each(function (index, value) {
@@ -269,8 +269,6 @@
                         }
                     });
                 }, 100);
-            } else {
-                console.log("其他");
             }
         });
 
@@ -282,7 +280,7 @@
         if (pageTitle !== '姜源の云笔记') {
             // 组合成新的标签标题
             const newTitle = `${pageTitle} - ${blogName}`;
-            console.log("title=" + newTitle);
+            //console.log("title=" + newTitle);
             // 设置新的标签标题
             document.title = newTitle;
         }

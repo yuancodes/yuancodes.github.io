@@ -123,30 +123,18 @@ comment: 'changyan'
   </div>
 </div>
 
-<hr>
-
-<div align=center>
-    <div>小弟不才，辛勤耕耘，如若受益，定如我心。</div>
-    <div>幸得<span style="color:red">打赏</span>，不值一提，相互<span style="color:red">勉励</span>，更上高楼！</div>
-</div>
-<br>
-<div style="width:100%;height:250px;display:flex;justify-content: center;align-items:center">
-    <div style="width:215px;margin:auto"><img src="https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20201108125117.png"></div>
-    <div style="width:215px;margin:auto"><img src="https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20201108125322.png"></div>
-    <div style="width:215px;margin:auto"><img src="https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20201108125404.png"></div>
-    <div style="width:215px;margin:auto"><img src="https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20201108125419.png"></div>
-</div>
-
 <!-- 悬浮动效脚本 -->
 <script>
-  document.querySelectorAll('div[style*="border-radius: 16px; padding: 32px;"]').forEach(card => {
-    card.addEventListener('mouseenter', () => {
-      card.style.transform = 'translateY(-8px)';
-      card.style.boxShadow = '0 12px 40px rgba(0,0,0,0.12)';
-    });
-    card.addEventListener('mouseleave', () => {
-      card.style.transform = 'translateY(0)';
-      card.style.boxShadow = '0 8px 30px rgba(0,0,0,0.08)';
-    });
-  });
+    window.onload = function() {
+      document.querySelectorAll('div[style*="border-radius: 16px; padding: 32px;"]').forEach(card => {
+        card.addEventListener('mouseenter', () => {
+          card.style.transform = 'translateY(-8px)';
+          card.style.boxShadow = '0 12px 40px rgba(0,0,0,0.12)';
+        });
+        card.addEventListener('mouseleave', () => {
+          card.style.transform = 'translateY(0)';
+          card.style.boxShadow = '0 8px 30px rgba(0,0,0,0.08)';
+        });
+      });
+    }
 </script>
