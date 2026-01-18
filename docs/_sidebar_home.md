@@ -9,7 +9,7 @@
 
 <body>
     <div style="width: 100%; background: linear-gradient(135deg, #1084DA 0%, #1084DA 100%); color: white; padding: 80px 20px; text-align: center; margin-bottom: 40px; border-radius: 8px;">
-        <h1 style="font-size: 3rem; margin-bottom: 16px; font-weight: 700; color: white;">全栈技术成长指南</h1>
+        <div style="font-size: 3rem; margin-bottom: 16px; font-weight: 700; color: white;">全栈技术成长指南</div>
         <p style="font-size: 1.2rem; opacity: 0.9; max-width: 800px; margin: 0 auto;">专注于 Java/SpringBoot/Vue/React 全栈开发与项目管理，分享可落地的技术方案与成长经验</p>
         <div style="margin-top: 30px;">
             <a href="https://yuancodes.github.io/#/_sidebar"
@@ -25,34 +25,34 @@
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-bottom: 50px;">
         <div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); text-align: center;">
             <div style="font-size: 2rem; margin-bottom: 12px;">🔧</div>
-            <h3>Java & SpringBoot</h3>
+            <div style="font-size: 1.25rem;font-weight: 600;color: #2d3748;margin: 1.5rem 0 1rem 0;line-height: 1.4;">Java & SpringBoot</div>
             <p style="color: #666;">后端架构与分布式</p>
         </div>
         <div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); text-align: center;">
             <div style="font-size: 2rem; margin-bottom: 12px;">🎨</div>
-            <h3>Vue & React</h3>
+            <div style="font-size: 1.25rem;font-weight: 600;color: #2d3748;margin: 1.5rem 0 1rem 0;line-height: 1.4;">Vue & React</div>
             <p style="color: #666;">前端工程化与用户体验</p>
         </div>
         <div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); text-align: center;">
             <div style="font-size: 2rem; margin-bottom: 12px;">📊</div>
-            <h3>项目管理</h3>
+            <div style="font-size: 1.25rem;font-weight: 600;color: #2d3748;margin: 1.5rem 0 1rem 0;line-height: 1.4;">项目管理</div>
             <p style="color: #666;">从需求到交付的全流程管控</p>
         </div>
         <div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); text-align: center;">
             <div style="font-size: 2rem; margin-bottom: 12px;">⚙️</div>
-            <h3>架构与性能</h3>
+            <div style="font-size: 1.25rem;font-weight: 600;color: #2d3748;margin: 1.5rem 0 1rem 0;line-height: 1.4;">架构与性能</div>
             <p style="color: #666;">高可用与系统优化实践</p>
         </div>
     </div>
     <div style="margin: 40px 0;">
-        <h2 style="color: #2d3748; font-size: 1.6rem; font-weight: 600; margin-bottom: 20px;"> 🛠️ 实战成长 </h2>
+        <div style="color: #2d3748; font-size: 1.6rem; font-weight: 600; margin-bottom: 20px;"> 🛠️ 实战成长 </div>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
             <div style="background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); overflow: hidden; transition: transform 0.3s ease;">
                 <div style="height: 160px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center;">
                     <span style="color: white; font-size: 3rem;">📝</span>
                 </div>
                 <div style="padding: 20px;">
-                    <h3 style="margin: 0 0 8px 0; color: #2d3748;">全栈地图标注系统</h3>
+                    <div style="margin: 0 0 8px 0; color: #2d3748;font-size: 1.25rem;font-weight: 600;line-height: 1.4;">全栈地图标注系统</div>
                     <p style="margin: 0 0 16px 0; color: #718096; font-size: 0.95rem;"> 基于 SpringBoot + Vue3 + 蚂蚁空间数据可视化开发的地图标注系统，包含用户/权限/菜单管理、地图选点标注、预约和审核等功能... </p>
                     <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px;"> <span
                             style="background: #eaf6fa; color: #38b2ac; padding: 4px 10px; border-radius: 16px; font-size: 0.8rem;">JDK 17</span> <span
@@ -71,7 +71,7 @@
                     <span style="color: white; font-size: 3rem;">📊</span>
                 </div>
                 <div style="padding: 20px;">
-                    <h3 style="margin: 0 0 8px 0; color: #2d3748;">项目管理进阶</h3>
+                    <div style="margin: 0 0 8px 0; color: #2d3748;font-size: 1.25rem;font-weight: 600;line-height: 1.4;">项目管理进阶</div>
                     <p style="margin: 0 0 16px 0; color: #718096; font-size: 0.95rem;">
                         项目管理是在成本、质量、进度之中找到平衡点，并在项目执行的过程中持续关注项目的价值，推进项目价值最大化... </p>
                     <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px;">
