@@ -274,7 +274,8 @@
         * [Express文件上传](./04_大前端/06_Node.js/07-Express文件上传.md)
         * [Express+apidoc接口文档](./04_大前端/06_Node.js/08-Express+apidoc接口文档.md)
         * [Koa框架](./04_大前端/06_Node.js/09-Koa框架.md)
-        * [Node.js+WebSocket连接](./04_大前端/06_Node.js/10-Node.js+WebSocket连接.md)
+        * [Node.js+WebSocket通信](./04_大前端/06_Node.js/10-Node.js+WebSocket通信.md)
+        * [Node.js+Mocha测试](./04_大前端/06_Node.js/11-Node.js+Mocha测试.md)
     * 07_Bootstrap
         * [Bootstrap格栅与组件](./04_大前端/07_Bootstrap/00-Bootstrap格栅与组件.md)
         * [Bootstrap框架使用](./04_大前端/07_Bootstrap/01-Bootstrap框架使用.md)
