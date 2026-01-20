@@ -6,7 +6,7 @@ tags:
 - 后台系统
 categories: 
 - 04_大前端
-- 08_LayUI
+- 19_LayUI
 ---
 
 ![image-20200701125924471](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20200701125929.png)

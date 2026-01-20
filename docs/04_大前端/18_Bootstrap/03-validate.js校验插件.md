@@ -6,7 +6,7 @@ tags:
 - 校验
 categories: 
 - 04_大前端
-- 06_JavaScript
+- 18_Bootstrap
 ---
 
 ### 1. validate.js 校验插件
