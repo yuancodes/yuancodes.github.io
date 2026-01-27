@@ -264,6 +264,8 @@
         * [vue工具库&组件库](./04_大前端/04_Vue/99-vue工具库&组件库.md)
     * 05_TypeScript
         * [TS基础入门](./04_大前端/05_TypeScript/01-TS基础入门.md)
+        * [TS+Vue+Webpack打包](./04_大前端/05_TypeScript/02-TS+Vue+Webpack打包.md)
+        * [TS+React](./04_大前端/05_TypeScript/03-TS+React.md)
     * 06_Node.js
         * [Node.js基础](./04_大前端/06_Node.js/01-Node.js基础.md)
         * [Node.js路由](./04_大前端/06_Node.js/02-Node.js路由.md)
@@ -275,7 +277,7 @@
         * [Express+apidoc接口文档](./04_大前端/06_Node.js/08-Express+apidoc接口文档.md)
         * [Koa框架](./04_大前端/06_Node.js/09-Koa框架.md)
         * [Node.js+WebSocket通信](./04_大前端/06_Node.js/10-Node.js+WebSocket通信.md)
-        * [Node.js+Mocha测试](./04_大前端/06_Node.js/11-Node.js+Mocha测试.md)
+        * [Node.js+Mocha单元测试](./04_大前端/06_Node.js/11-Node.js+Mocha单元测试.md)
     * 07_React
         * [React基础](./04_大前端/07_React/01-React基础.md)
         * [React组件状态与属性](./04_大前端/07_React/02-React组件状态与属性.md)
@@ -287,7 +289,10 @@
         * [React+Mobx公共状态管理](./04_大前端/07_React/08-React+Mobx公共状态管理.md)
         * [React+AntDesign组件库](./04_大前端/07_React/09-React+AntDesign组件库.md)
         * [React+immutable库](./04_大前端/07_React/10-React+immutable库.md)
-        * [React+TypeScript(TS)](./04_大前端/07_React/11-React+TypeScript(TS).md)
+        * [React+styled-components库](./04_大前端/07_React/11-React+styled-components库.md)
+        * [React单元测试](./04_大前端/07_React/12-React单元测试.md)
+        * [React+Redux-saga库](./04_大前端/07_React/13-React+Redux-saga库.md)
+        * [React的Portal&forwardRef&memo](./04_大前端/07_React/14-React的Portal&forwardRef&memo.md)
     * 18_Bootstrap
         * [Bootstrap格栅与组件](./04_大前端/18_Bootstrap/00-Bootstrap格栅与组件.md)
         * [Bootstrap框架使用](./04_大前端/18_Bootstrap/01-Bootstrap框架使用.md)
