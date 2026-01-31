@@ -58,7 +58,7 @@
         * [hosts自用](./01_操作系统/05_Windows/02-hosts自用.md)
         * [10分钟搞定win11安卓子系统](./01_操作系统/05_Windows/03-10分钟搞定win11安卓子系统.md)
         * [win10或win11系统激活-纯命令](./01_操作系统/05_Windows/04-win10或win11系统激活-纯命令.md)
-        * [win11系统优化设置](./01_操作系统/05_Windows/05-win11系统优化设置.md)
+        * [win11系统优化+powershell美化](./01_操作系统/05_Windows/05-win11系统优化+powershell美化.md)
 * 02_编程语言
     * 01_Java
         * 01_JavaSE
