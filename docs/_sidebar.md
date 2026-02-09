@@ -298,12 +298,16 @@
         * [React企业级应用框架选型](./04_大前端/07_React/99-React企业级应用框架选型.md)
     * 08_JsonServer
         * [json-server实现增删改查](./04_大前端/08_JsonServer/01-json-server实现增删改查.md)
-    * 09_uni-app
-        * [uni-app&vue3基础](./04_大前端/09_uni-app/01-uni-app&vue3基础.md)
-        * [uni-app&vue3项目搭建](./04_大前端/09_uni-app/02-uni-app&vue3项目搭建.md)
+    * 09_uniapp
+        * [uniapp&vue3基础](./04_大前端/09_uniapp/01-uniapp&vue3基础.md)
+        * [uniapp&vue3项目搭建](./04_大前端/09_uniapp/02-uniapp&vue3项目搭建.md)
+        * [uniapp&vue3打包上线](./04_大前端/09_uniapp/03-uniapp&vue3打包上线.md)
     * 10_小程序
         * [wechat微信小程序基础](./04_大前端/10_小程序/01-wechat微信小程序基础.md)
         * [wechat微信小程序项目搭建](./04_大前端/10_小程序/02-wechat微信小程序项目搭建.md)
+    * 11_Webpack
+        * [webpack入门](./04_大前端/11_Webpack/01-webpack入门.md)
+        * [webpack配置](./04_大前端/11_Webpack/02-webpack配置.md)
     * 18_Bootstrap
         * [Bootstrap格栅与组件](./04_大前端/18_Bootstrap/00-Bootstrap格栅与组件.md)
         * [Bootstrap框架使用](./04_大前端/18_Bootstrap/01-Bootstrap框架使用.md)
@@ -405,7 +409,7 @@
         * [Nginx 配置详解](./06_服务器/02_Nginx/01-Nginx%20配置详解.md)
         * [Nginx 负载均衡](./06_服务器/02_Nginx/02-Nginx%20负载均衡.md)
     * 03_CentOS
-        * [VMware安装和配置CentOS7开发&运维环境](./06_服务器/03_CentOS/01-VMware安装和配置CentOS7开发&运维环境.md)
+        * [CentOS7开发&运维环境](./06_服务器/03_CentOS/01-CentOS7开发&运维环境.md)
 * 07_虚拟机
     * [GC垃圾回收器](./07_虚拟机/01-GC垃圾回收器.md)
     * [JVM线程和进程调度](./07_虚拟机/02-JVM线程和进程调度.md)
