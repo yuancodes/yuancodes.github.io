@@ -684,6 +684,7 @@
         * [聚合支付Demo](./14_微服务/10_支付服务/03-聚合支付Demo.md)
     * 11_缓存服务
         * [Spring Data Redis+Redisson](./14_微服务/11_缓存服务/Spring%20Data%20Redis+Redisson.md)
+        * [本地缓存Caffeine实战](./14_微服务/11_缓存服务/本地缓存Caffeine实战.md)
 * 15_分布式
     * 00_Api文档
         * [Swagger不同版本集成与聚合](./15_分布式/00_Api文档/01-Swagger不同版本集成与聚合.md)
