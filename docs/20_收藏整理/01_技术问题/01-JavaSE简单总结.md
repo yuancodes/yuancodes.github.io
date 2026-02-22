@@ -4,7 +4,7 @@ date: 2017-6-28 23:09:27
 tags:
 - 面试题
 categories: 
-- 20_面试问题
+- 20_收藏整理
 - 01_技术问题
 ---
 
@@ -371,7 +371,7 @@ Google首席Java架构师Joshua Bloch在他的著作《Effective Java》中提�
     (5) 如果是double值，则计算**Double.doubleToLongBits(f)**，然后**返回的结果是long,再用规则(3)去处理long,得到int**
     (6) 如果是对象应用，如果equals方法中采取递归调用的比较方式，那么hashCode中同样采取递归调用hashCode的方式。否则需要为这个域计算一个范式，比如当这个域的值为null的时候，那么hashCode 值为0
     (7) 如果是数组，那么需要为每个元素当做单独的域来处理。如果你使用的是1.5及以上版本的JDK，那么没必要自己去重新遍历一遍数组，java.util.Arrays.hashCode方法包含了8种基本类型数组和引用数组的hashCode计算，算法同上，
-　　java.util.Arrays.hashCode(long[])的具体实现:
+    　　java.util.Arrays.hashCode(long[])的具体实现:
 
 ```java
 public static int hashCode(long a[]) {
