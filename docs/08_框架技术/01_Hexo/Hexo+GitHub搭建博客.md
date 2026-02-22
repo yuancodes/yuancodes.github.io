@@ -19,12 +19,17 @@ Hexo 博客框架中文官网+文档：https://hexo.bootcss.com/
 
 
 一个合格的Java程序员都应该拥有一个博客站点，最起码的作用：
+
 ① 技术笔记
+
 ② 经验总结
+
 ③ 前后端可劲造 - 学习
+
 ④ 美文撰写
 
 >搭建博客的系统环境：`Windows 10 企业版 LTSC`
+>
 >只要是 Windows 主流系统环境下，本质上步骤并不会有任何差异。
 
 ## 1. GitHub 准备工作
@@ -32,10 +37,14 @@ Hexo 博客框架中文官网+文档：https://hexo.bootcss.com/
 ![在这里插入图片描述](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20230316150551.png)
 #### 1.2 GitBash 下载安装
 下载地址：[https://gitforwindows.org/](https://gitforwindows.org/)
+
 ![在这里插入图片描述](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20230316150653.png)
+
 ![在这里插入图片描述](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20230316150737.png)
+
 ![在这里插入图片描述](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20230316150746.png)
-剩下的，一路默认就行（安装路径根据自己需要更改）。
+
+剩下的，一路默认就行（安装路径根据自己需要更改)。
 
 
 
@@ -51,29 +60,46 @@ GitHub 的桌面版，为部署到 github.io 公网路径时使用。
 
 #### 1.4 Node.js 下载安装
 下载地址：[https://nodejs.org/zh-cn/](https://nodejs.org/zh-cn/)
+
 ![在这里插入图片描述](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20230316150755.png)
-一路默认就行（安装路径根据自己需要更改）。
+
+一路默认就行（安装路径根据自己需要更改)。
 
 ## 2. Hexo 准备工作
 #### 2.1 Hexo 下载安装
 ① 在任意位置点击鼠标右键，选择Git Bash
+
 ![在这里插入图片描述](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20230316150805.png)
+
 ② 安装Hexo命令：`npm install -g hexo`
+
 ![在这里插入图片描述](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20230316150812.png)
 
 #### 2.2 Hexo 初始化配置
 1. 创建文件夹（我的是在D盘创建的Hexo）
+
 ![在这里插入图片描述](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20230316150816.png)
+
 2. 在Hexo文件下，右键运行Git Bash，输入命令：`hexo init`
+
 ![在这里插入图片描述](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20230316150829.png)
+
 3. 在`_config.yml`,进行基础配置
+
 ![在这里插入图片描述](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20230316150834.png)
+
 ![在这里插入图片描述](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20230316150842.png)
+
 4、主题选择（博客整体外观哦）
+
 Hexo的主题分享页：[https://hexo.io/themes/](https://hexo.io/themes/)
+
 该页面里点击图片是预览，点击主题的名字则是进入git中，获取其git主题路径，然后在Hexo文件夹下使用 Git Bash。
+
 输入命令(注意空格)：`git clone 主题的git链接 themes/目录名`
-eg: **git clone https://github.com/wujun234/hexo-theme-tree.git themes/tree**
+
+eg: 
+
 ![在这里插入图片描述](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20230316150852.png)
 ![在这里插入图片描述](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20230316150903.png)
 ![在这里插入图片描述](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20230316150907.png)

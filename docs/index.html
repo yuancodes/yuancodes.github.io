@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -12,22 +12,29 @@
     <link rel="stylesheet" href="./css/breadcrumb.min.css">
     <!--- 网站ico图标 -->
     <link rel="icon" href="_media/favicon.ico">
+    <title>姜源の全栈云笔记</title>
+    <meta name="author" content="Jerry(姜源)">
+    <meta name="keywords" content="Java,Html,CSS,JavaScript,Vue,React,SpringBoot,Linux,shell编程经验分享、技术总结、心得体会">
+    <meta name="description" content="Java、Html、CSS、JavaScript、Vue、React、SpringBoot、Linux、shell编程经验分享、技术总结、心得体会">
 </head>
 <style>
     :root {
         --docsifytabs-border-color: #ededed;
         --docsifytabs-tab-highlight-color: purple;
     }
-
     figure {
         text-align: center
     }
+    /* 修复标题锚点定位偏差 */
+    h1, h2, h3, h4 {
+        position: relative;
+        /* 抵消 margin 导致的视觉偏移 */
+        scroll-margin-top: 60px;
+        /* 兼容旧浏览器 */
+        scroll-padding-top: 60px;
+    }
 </style>
 <body>
-<title>姜源の全栈云笔记</title>
-<meta name="author" content="Jerry(姜源)">
-<meta name="keywords" content="Java,Html,CSS,JavaScript,Vue,React,SpringBoot,Linux,shell编程经验分享、技术总结、心得体会">
-<meta name="description" content="Java、Html、CSS、JavaScript、Vue、React、SpringBoot、Linux、shell编程经验分享、技术总结、心得体会">
 
 <!--正文-->
 <div id="app">美好即将发生...</div>
@@ -112,7 +119,11 @@
         //页面右侧toc文档内的侧边栏
         toc: {
             tocMaxLevel: 4,
-            target: "h1, h2, h3, h4",
+            target: "h2, h3, h4, h5",
+            // 核心修复：添加滚动偏移（根据你的导航栏高度调整，比如60px）
+            scrollOffset: 60,
+            // 可选：开启平滑滚动，体验更好
+            scrollSmooth: true
         },
         //代码复制插件：docsify-copy-code
         copyCode: {
@@ -199,7 +210,7 @@
 <script src="./js/countable.min.js"></script>
 <!--页脚增强插件: https://unpkg.com/docsify-footer-enh/dist/docsify-footer-enh.min.js-->
 <script src="./js/docsify-footer-enh.min.js"></script>
-<!--页面右侧 TOC: https://cdn.jsdelivr.net/npm/docsify-plugin-toc@1.1.0/dist/docsify-plugin-toc.min.js-->
+<!--页面右侧 TOC: https://cdn.jsdelivr.net/npm/docsify-plugin-toc@1.2.0/dist/docsify-plugin-toc.min.js-->
 <script src="./js/docsify-plugin-toc.min.js"></script>
 <!--侧边栏支持折叠插件: https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js-->
 <script src="./js/docsify-sidebar-collapse.min.js"></script>
