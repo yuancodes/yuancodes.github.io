@@ -9,7 +9,7 @@ tags:
 - 服务商
 categories:
 - 13_第三方
-- 04_WeChat
+- 03_WeChat
 ---
 
 ![image-20240920174732600](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20240920174733.png)

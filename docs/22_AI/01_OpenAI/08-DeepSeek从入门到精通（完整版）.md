@@ -8,7 +8,7 @@ tags:
 - Deepseek
 categories: 
 - 13_第三方
-- 03_OpenAI
+- 01_OpenAI
 ---
 
 

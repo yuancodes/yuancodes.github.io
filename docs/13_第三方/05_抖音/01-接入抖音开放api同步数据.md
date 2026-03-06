@@ -7,7 +7,7 @@ tags:
 - 抖音
 categories:
 - 13_第三方
-- 06_抖音
+- 05_抖音
 ---
 
 ![image-20241115134718073](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20241115134719.png)

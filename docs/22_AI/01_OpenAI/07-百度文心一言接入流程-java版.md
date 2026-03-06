@@ -9,7 +9,7 @@ tags:
 - 文心一言
 categories: 
 - 13_第三方
-- 03_OpenAI
+- 01_OpenAI
 ---
 
 ![image-20240729115444178](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20240729115539.png)

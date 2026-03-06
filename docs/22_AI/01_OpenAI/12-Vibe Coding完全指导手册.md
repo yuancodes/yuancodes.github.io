@@ -8,7 +8,7 @@ tags:
 - VSCode
 categories: 
 - 13_第三方
-- 03_OpenAI
+- 01_OpenAI
 ---
 
 ![image-20260103104343566](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20260103104344816.png)

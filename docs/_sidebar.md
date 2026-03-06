@@ -629,30 +629,16 @@
         * [短信验证码](./13_第三方/02_Aliyun/01-短信验证码.md)
         * [OSS对象存储](./13_第三方/02_Aliyun/02-OSS对象存储.md)
         * [高性能Excel工具](./13_第三方/02_Aliyun/03-高性能Excel工具.md)
-    * 03_OpenAI
-        * [接入chatGPT API](./13_第三方/03_OpenAI/01-接入chatGPT%20API.md)
-        * [chatGPT提示词汇总](./13_第三方/03_OpenAI/02-chatGPT提示词汇总.md)
-        * [chatGPT生成UML图形](./13_第三方/03_OpenAI/03-chatGPT生成UML图形.md)
-        * [国内&国外大模型汇总](./13_第三方/03_OpenAI/04-国内&国外大模型汇总.md)
-        * [prompt提示词指导规范](./13_第三方/03_OpenAI/05-prompt提示词指导规范.md)
-        * [prompt提示词编写技巧](./13_第三方/03_OpenAI/06-prompt提示词编写技巧.md)
-        * [百度文心一言接入流程-java版](./13_第三方/03_OpenAI/07-百度文心一言接入流程-java版.md)
-        * [DeepSeek从入门到精通（完整版）](./13_第三方/03_OpenAI/08-DeepSeek从入门到精通（完整版）.md)
-        * [DeepSeek提效：画图&生成sql&生成java代码](./13_第三方/03_OpenAI/09-DeepSeek提效：画图&生成sql&生成java代码.md)
-        * [SpringBoot+MCP整合AI与服务的桥梁](./13_第三方/03_OpenAI/10-SpringBoot+MCP整合AI与服务的桥梁.md)
-        * [【AI智能体】Coze 搭建个人旅游规划助手实战详解](./13_第三方/03_OpenAI/11-【AI智能体】Coze%20搭建个人旅游规划助手实战详解.md)
-        * [Vibe Coding完全指导手册](./13_第三方/03_OpenAI/12-Vibe%20Coding完全指导手册.md)
-        * [传统编程到大模型编程是【必然】趋势](./13_第三方/03_OpenAI/13-传统编程到大模型编程是【必然】趋势.md)
-    * 04_WeChat
-        * [企业微信第三方应用接入全流程java版](./13_第三方/04_WeChat/01-企业微信第三方应用接入全流程java版.md)
-        * [微信服务号订阅消息开发流程](./13_第三方/04_WeChat/02-微信服务号订阅消息开发流程.md)
-    * 05_小红书
-        * [接入小红书开放api同步店铺数据](./13_第三方/05_小红书/01-接入小红书开放api同步店铺数据.md)
-    * 06_抖音
-        * [接入抖音开放api同步数据](./13_第三方/06_抖音/01-接入抖音开放api同步数据.md)
-    * 07_OAuth2.0
-        * [OAuth2.0 协议](./13_第三方/07_OAuth2.0/01-OAuth2.0%20协议.md)
-        * [GitHub 第三方关联登陆](./13_第三方/07_OAuth2.0/02-GitHub%20第三方关联登陆.md)
+    * 03_WeChat
+        * [企业微信第三方应用接入全流程java版](./13_第三方/03_WeChat/01-企业微信第三方应用接入全流程java版.md)
+        * [微信服务号订阅消息开发流程](./13_第三方/03_WeChat/02-微信服务号订阅消息开发流程.md)
+    * 04_小红书
+        * [接入小红书开放api同步店铺数据](./13_第三方/04_小红书/01-接入小红书开放api同步店铺数据.md)
+    * 05_抖音
+        * [接入抖音开放api同步数据](./13_第三方/05_抖音/01-接入抖音开放api同步数据.md)
+    * 06_OAuth2.0
+        * [OAuth2.0 协议](./13_第三方/06_OAuth2.0/01-OAuth2.0%20协议.md)
+        * [GitHub 第三方关联登陆](./13_第三方/06_OAuth2.0/02-GitHub%20第三方关联登陆.md)
 * 14_微服务
     * 00_技术架构
         * [Web技术架构演变](./14_微服务/00_技术架构/01-Web技术架构演变.md)
@@ -810,6 +796,23 @@
         * [使Redis序列化中文不会乱码配置类](./21_代码片段/02_配置类/02-使Redis序列化中文不会乱码配置类.md)
         * [ThreadPoolConfig](./21_代码片段/02_配置类/03-ThreadPoolConfig.md)
         * [递归解析json任意层级文件](./21_代码片段/02_配置类/04-递归解析json任意层级文件.md)
+* 22_AI
+    * 01_OpenAI
+        * [接入chatGPT API](./22_AI/01_OpenAI/01-接入chatGPT%20API.md)
+        * [chatGPT提示词汇总](./22_AI/01_OpenAI/02-chatGPT提示词汇总.md)
+        * [chatGPT生成UML图形](./22_AI/01_OpenAI/03-chatGPT生成UML图形.md)
+        * [国内&国外大模型汇总](./22_AI/01_OpenAI/04-国内&国外大模型汇总.md)
+        * [prompt提示词指导规范](./22_AI/01_OpenAI/05-prompt提示词指导规范.md)
+        * [prompt提示词编写技巧](./22_AI/01_OpenAI/06-prompt提示词编写技巧.md)
+        * [百度文心一言接入流程-java版](./22_AI/01_OpenAI/07-百度文心一言接入流程-java版.md)
+        * [DeepSeek从入门到精通（完整版）](./22_AI/01_OpenAI/08-DeepSeek从入门到精通（完整版）.md)
+        * [DeepSeek提效：画图&生成sql&生成java代码](./22_AI/01_OpenAI/09-DeepSeek提效：画图&生成sql&生成java代码.md)
+        * [SpringBoot+MCP整合AI与服务的桥梁](./22_AI/01_OpenAI/10-SpringBoot+MCP整合AI与服务的桥梁.md)
+        * [【AI智能体】Coze 搭建个人旅游规划助手实战详解](./22_AI/01_OpenAI/11-【AI智能体】Coze%20搭建个人旅游规划助手实战详解.md)
+        * [Vibe Coding完全指导手册](./22_AI/01_OpenAI/12-Vibe%20Coding完全指导手册.md)
+        * [传统编程到大模型编程是【必然】趋势](./22_AI/01_OpenAI/13-传统编程到大模型编程是【必然】趋势.md)
+    * 02_OpenClaw
+        * [10分钟搭建OpenClaw(基于Windows+飞书)](./22_AI/02_OpenClaw/01-10分钟搭建OpenClaw(基于Windows+飞书).md)
 * 99_个人成长
     * 01_书籍资料
         * [Java编程书籍](./99_个人成长/01_书籍资料/01-Java编程书籍.md)

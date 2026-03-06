@@ -7,7 +7,7 @@ tags:
 - 小红书
 categories:
 - 13_第三方
-- 05_小红书
+- 04_小红书
 ---
 
 ![image-20241113155929061](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20241113155930.png)

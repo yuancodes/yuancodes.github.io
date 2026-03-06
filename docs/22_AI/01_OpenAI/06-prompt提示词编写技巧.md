@@ -8,7 +8,7 @@ tags:
 - prompt
 categories: 
 - 13_第三方
-- 03_OpenAI
+- 01_OpenAI
 ---
 
 ![image-20230420144823328](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20230420144824.png)
@@ -219,7 +219,7 @@ Negative
 分隔符是以下任意一个: 
 
 ```
-​```, """, < >, <tag> </tag>
+```, """, < >, <tag> </tag>
 ```
 
 Prompt示例：
