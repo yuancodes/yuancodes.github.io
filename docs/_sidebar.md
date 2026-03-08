@@ -812,7 +812,7 @@
         * [Vibe Coding完全指导手册](./22_AI/01_OpenAI/12-Vibe%20Coding完全指导手册.md)
         * [传统编程到大模型编程是【必然】趋势](./22_AI/01_OpenAI/13-传统编程到大模型编程是【必然】趋势.md)
     * 02_OpenClaw
-        * [10分钟搭建OpenClaw(基于Windows+飞书)](./22_AI/02_OpenClaw/01-10分钟搭建OpenClaw(基于Windows+飞书).md)
+        * [10分钟搭建OpenClaw(Win11+飞书)](./22_AI/02_OpenClaw/01-10分钟搭建OpenClaw(Win11+飞书).md)
 * 99_个人成长
     * 01_书籍资料
         * [Java编程书籍](./99_个人成长/01_书籍资料/01-Java编程书籍.md)
