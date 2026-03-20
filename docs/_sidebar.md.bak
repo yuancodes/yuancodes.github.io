@@ -39,6 +39,7 @@
     * 09_Trae
         * [Trae IDE&SOLO浅尝](./00_先利其器/09_Trae/01-Trae%20IDE&SOLO浅尝.md)
         * [Trae IDE多角色Skills技能包](./00_先利其器/09_Trae/02-Trae%20IDE多角色Skills技能包.md)
+    * [emoji](./00_先利其器/emoji.md)
 * 01_操作系统
     * 01_操作系统基础
         * [操作系统简述](./01_操作系统/01_操作系统基础/01-操作系统简述.md)

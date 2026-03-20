@@ -22,6 +22,7 @@ categories:
 * Trae 官方中文社区：https://forum.trae.cn/
 * Trae SOLO 功能详解：https://forum.trae.cn/t/topic/225
 * AI Short（多种 AI 提示词搜索、管理、共享）：https://www.aishort.top/
+* 提示词工程指南：https://www.promptingguide.ai/zh
 
 ## 1. Trae 安装
 
@@ -422,13 +423,32 @@ RAE 支持在设置页面可以快速创建一个 Skill
 
 将SKILL.md文件或者zip压缩包直接上传，就可以创建对应的Skills,这种方式**尤其适合**从github仓库找到的skills技能，然后拉取下来进行创建。
 
-1、使用以下命令克隆仓库代码到本地
+1、使用以下命令克隆仓库代码到本地，如 **Claude 官方提供的 Skills：**
 
 ```
 git clone https://github.com/anthropics/skills.git
 ```
 
 skills目录下有各种各样的skills，每个文件夹都对应一个**skill技能**。
+
+| **Skills 名称**          | **Skills 说明**                                              | **适用场景**                                                 |
+| ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **algorithmic-art**      | 使用 p5.js 创建生成艺术，支持种子随机性、流场和粒子系统。    | 适用于通过代码生成艺术、流场或粒子系统等场景。               |
+| **artifacts-builder**    | 使用 React、Tailwind CSS 和 shadcn/ui 等现代前端技术，构建复杂的多组件 claude.ai HTML 制品。 | 适用于需要状态管理、路由或复杂 UI 组件的场景。               |
+| **brand-guidelines**     | 将 Anthropic 官方品牌颜色和版式应用于各类制品。              | 适用于需要遵循公司品牌或设计规范的视觉格式化任务。           |
+| **canvas-design**        | 使用设计哲学创建 PNG 和 PDF 格式的视觉艺术作品，如海报或设计图。 | 适用于需要原创视觉设计的场景，避免版权问题。                 |
+| **document-Skills/docx** | 支持 docx 文件的创建、编辑与分析，包括追踪修订、添加评论、保留格式和文本提取。 | 适用于处理专业的 Word 文档。                                 |
+| **document-Skills/pdf**  | 提供全面的 PDF 操作工具集，支持文本与表格提取、创建新 PDF、合并/拆分文档及处理表单。 | 适用于需要以编程方式处理、生成或分析 PDF 的场景。            |
+| **document-Skills/pptx** | 支持 pptx 文件的创建、编辑与分析，包括处理布局、模板、图表和自动生成幻灯片。 | 适用于各类演示文稿处理任务。                                 |
+| **document-Skills/xlsx** | 支持 xlsx 等电子表格文件的创建、编辑与分析，包括公式、格式化、数据分析和可视化。 | 适用于需要处理电子表格数据的各类任务。                       |
+| **frontend-design**      | 创建具有独特性和生产级别质量的前端界面。                     | 适用于构建避免通用 AI 审美的、视觉效果突出的 Web 组件、页面或应用。 |
+| **internal-comms**       | 辅助撰写各类内部沟通文档，如状态报告、领导层更新、公司通讯和常见问题解答。 | 适用于需要遵循公司内部沟通规范的写作任务。                   |
+| **mcp-builder**          | 指导创建高质量的 MCP （Model Context Protocol） 服务器，使语言模型能与外部服务和 API 交互。 | 适用于 Python （FastMCP） 或 Node/TypeScript （MCP SDK） 环境。 |
+| **Skills-creator**       | 指导创建或更新能扩展 Claude 能力的 Skills，包括添加专业知识、工作流或工具集成。 | 适用于为 Claude 开发新能力的场景。                           |
+| **slack-gif-creator**    | 创建针对 Slack 优化的动画 GIF，提供尺寸验证和动画。          | 适用于为 Slack 创建符合其大小限制的动画 GIF 或表情。         |
+| **template-Skills**      | 作为一个基础模板，用于创建新 Skills 的起点。                 | /                                                            |
+| **theme-factory**        | 提供 10 种预设主题或动态生成自定义主题，为各类制品（如幻灯片、文档）提供样式。 | 适用于需要对产出物进行专业视觉风格化的场景。                 |
+| **webapp-testing**       | 使用 Playwright 与本地 Web 应用进行交互和测试，支持验证前端功能、调试 UI 行为和捕获浏览器日志。 | 适用于 webapp AI 自动化测试场景                              |
 
 ![image-20260307123156808](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20260307123158029.png)
 
