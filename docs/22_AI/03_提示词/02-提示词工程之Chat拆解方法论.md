@@ -1,6 +1,7 @@
 ---
 title: 02-提示词工程之Chat拆解方法论
 date: 2026-01-22 23:05:43
+index_img: https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20260210171726358.png
 tags:
 - ai
 - 大模型
