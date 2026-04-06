@@ -505,6 +505,7 @@
     * 05_SpringCloud
         * [Spring Cloud Alibaba快速上手](./08_框架技术/05_SpringCloud/Spring%20Cloud%20Alibaba快速上手.md)
         * [Spring Cloud Alibaba架构](./08_框架技术/05_SpringCloud/Spring%20Cloud%20Alibaba架构.md)
+        * [Spring Cloud Alibaba架构整合](./08_框架技术/05_SpringCloud/Spring%20Cloud%20Alibaba架构整合.md)
         * [Spring Cloud中文文档](./08_框架技术/05_SpringCloud/Spring%20Cloud中文文档.md)
     * 06_Quartz
         * [Quartz 定时任务](./08_框架技术/06_Quartz/Quartz%20定时任务.md)
@@ -697,8 +698,9 @@
     * 05_分布式任务
         * [XXL-JOB框架](./15_分布式/05_分布式任务/01-XXL-JOB框架.md)
     * 06_分布式消息队列
-        * [搜狐的MQCloud框架](./15_分布式/06_分布式消息队列/01-搜狐的MQCloud框架.md)
-        * [应对消息丢失、重复、顺序与积压的全面策略](./15_分布式/06_分布式消息队列/02-应对消息丢失、重复、顺序与积压的全面策略.md)
+        * [RocketMQ原理及安装](./15_分布式/06_分布式消息队列/01-RocketMQ原理及安装.md)
+        * [搜狐的MQCloud框架](./15_分布式/06_分布式消息队列/02-搜狐的MQCloud框架.md)
+        * [应对消息丢失、重复、顺序与积压的全面策略](./15_分布式/06_分布式消息队列/03-应对消息丢失、重复、顺序与积压的全面策略.md)
     * 07_分布式日志
         * [ELK日志分析系统搭建](./15_分布式/07_分布式日志/01-ELK日志分析系统搭建.md)
         * [Logstash详解](./15_分布式/07_分布式日志/02-Logstash详解.md)
