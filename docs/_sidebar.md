@@ -164,6 +164,7 @@
             * [20条性能和效率高质量准则](./02_编程语言/01_Java/05_高质量代码/10-20条性能和效率高质量准则.md)
         * 06_Java21
             * [Java21新特性](./02_编程语言/01_Java/06_Java21/00-Java21新特性.md)
+            * [Java21+Groovy动态脚本](./02_编程语言/01_Java/06_Java21/01-Java21+Groovy动态脚本.md)
     * 02_Python
         * [Python基础语法大全](./02_编程语言/02_Python/01-Python基础语法大全.md)
     * 03_Shell
