@@ -823,7 +823,7 @@
         * [【AI智能体】Coze 搭建个人旅游规划助手实战详解](./22_AI/01_OpenAI/11-【AI智能体】Coze%20搭建个人旅游规划助手实战详解.md)
         * [Vibe Coding完全指导手册](./22_AI/01_OpenAI/12-Vibe%20Coding完全指导手册.md)
         * [传统编程到大模型编程是【必然】趋势](./22_AI/01_OpenAI/13-传统编程到大模型编程是【必然】趋势.md)
-        * [Harness Engineering驾驭工程与提示词工程](./22_AI/01_OpenAI/14-Harness%20Engineering驾驭工程与提示词工程.md)
+        * [Harness Engineering驾驭工程](./22_AI/01_OpenAI/14-Harness%20Engineering驾驭工程.md)
     * 02_OpenClaw
         * [10分钟搭建OpenClaw(Win11+飞书)](./22_AI/02_OpenClaw/01-10分钟搭建OpenClaw(Win11+飞书).md)
     * 03_提示词
