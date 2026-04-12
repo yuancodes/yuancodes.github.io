@@ -506,6 +506,7 @@
         * [SpringBoot+Prometheus打造高效监控系统](./08_框架技术/04_SpringBoot/19-SpringBoot+Prometheus打造高效监控系统.md)
         * [SpringBoot外部配置文件热加载](./08_框架技术/04_SpringBoot/20-SpringBoot外部配置文件热加载.md)
         * [SpringBoot解决跨域问题](./08_框架技术/04_SpringBoot/21-SpringBoot解决跨域问题.md)
+        * [SpringBoot+Java21脚手架](./08_框架技术/04_SpringBoot/22-SpringBoot+Java21脚手架.md)
     * 05_SpringCloud
         * [Spring Cloud Alibaba快速上手](./08_框架技术/05_SpringCloud/Spring%20Cloud%20Alibaba快速上手.md)
         * [Spring Cloud Alibaba架构](./08_框架技术/05_SpringCloud/Spring%20Cloud%20Alibaba架构.md)
