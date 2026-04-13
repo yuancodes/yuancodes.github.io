@@ -132,7 +132,7 @@
             * [Lambda](./02_编程语言/01_Java/02_Java8/01-Lambda.md)
             * [函数式接口](./02_编程语言/01_Java/02_Java8/02-函数式接口.md)
             * [Stream](./02_编程语言/01_Java/02_Java8/03-Stream.md)
-            * [Stream流多级排序](./02_编程语言/01_Java/02_Java8/04-Stream流多级排序.md)
+            * [Stream流处理全集](./02_编程语言/01_Java/02_Java8/04-Stream流处理全集.md)
             * [Stream流高级](./02_编程语言/01_Java/02_Java8/05-Stream流高级.md)
             * [Java8-21各版本新特性](./02_编程语言/01_Java/02_Java8/07-Java8-21各版本新特性.md)
         * 03_JDBC
