@@ -133,8 +133,7 @@
             * [函数式接口](./02_编程语言/01_Java/02_Java8/02-函数式接口.md)
             * [Stream](./02_编程语言/01_Java/02_Java8/03-Stream.md)
             * [Stream流处理全集](./02_编程语言/01_Java/02_Java8/04-Stream流处理全集.md)
-            * [Stream流高级](./02_编程语言/01_Java/02_Java8/05-Stream流高级.md)
-            * [Java8-21各版本新特性](./02_编程语言/01_Java/02_Java8/07-Java8-21各版本新特性.md)
+            * [Java8-21各版本新特性](./02_编程语言/01_Java/02_Java8/05-Java8-21各版本新特性.md)
         * 03_JDBC
             * [JDBC开发](./02_编程语言/01_Java/03_JDBC/01-JDBC开发.md)
             * [ORM封装DAO思想](./02_编程语言/01_Java/03_JDBC/02-ORM封装DAO思想.md)
