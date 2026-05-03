@@ -42,7 +42,7 @@ categories:
 
 1. 注册小程序：https://mp.weixin.qq.com/cgi-bin/wx
 2. 登陆小程序后台：https://mp.weixin.qq.com/
-3. 拿到 `AppID(小程序ID)`：【**开发与服务**】-【**开发管理**】，eg: wx51c55a4653bba442
+3. 拿到 `AppID(小程序ID)`：【**开发与服务**】-【**开发管理**】，eg: wx...2
 4. 安装开发者工具（稳定版）：https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html
 5. **扫码**开发者工具登陆，**新建**小程序项目，选择**目录**(自动取最后一级目录作为项目名称-提前创建)，填写 **AppID**，不使用云服务，模版默认选择官方推荐第一个即可。
    - 默认 `JS Skyline 模板`是微信小程序的「新一代性能版模板」，在兼容原有开发体验的前提下，实现了渲染性能的跨越式提升，是目前微信小程序开发的**主流推荐选择**。
