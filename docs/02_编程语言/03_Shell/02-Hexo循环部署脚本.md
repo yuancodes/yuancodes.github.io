@@ -146,8 +146,8 @@ function dealGithub() {
 	echo "github: 开始>>>"
 	./deploy.sh
 	echo "github hexo 部署成功！！！"
-	#git 提交和推送代码
-	pushGit
+	#git 提交和推送代码 - 无需再推送代码，因为 hexo d 会通过 _config.yml 推送代码到远程仓库
+	#pushGit
 	cd $CURRENT_DIR
 	echo "cd "$CURRENT_DIR
 }
