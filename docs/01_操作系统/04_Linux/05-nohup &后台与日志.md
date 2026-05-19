@@ -15,7 +15,7 @@ categories:
 
  
 
-### 1. 后台运行+日志
+## 1. 后台运行+日志
 
 ```sh
 # 【后台】后台且不挂断的运行 jar 包程序
@@ -60,7 +60,7 @@ cat /dev/null > nohup.out
 
 
 
-### 2. 查看后台的任务
+## 2. 查看后台的任务
 
 ```sh
 jobs
@@ -76,7 +76,7 @@ jobs
 
 
 
-### 3. 前后台进程切换
+## 3. 前后台进程切换
 
 （1）`fg`命令
 
@@ -89,3 +89,19 @@ jobs
 （3）`bg`命令
 
 将一个在后台暂停的命令，变成在后台继续执行
+
+
+
+## 4. windows 下后台启动jar包
+
+```sh
+# jar 包后台启动
+D: && cd .\work\jar && javaw -jar myjar.jar
+# 查找后台启动的jar包进程
+tasklist | findstr javaw.exe
+# 杀掉后台启动的jar包进程
+taskkill /F /IM javaw.exe
+# 杀掉指定的jar包进程
+taskkill /F /PID 12345
+```
+

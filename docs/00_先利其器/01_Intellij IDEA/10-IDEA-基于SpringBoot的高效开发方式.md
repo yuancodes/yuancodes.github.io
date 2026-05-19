@@ -72,3 +72,12 @@ mybatisplus 通过方法名规则生成所需方法(不需要写mapper.xml中的
 ```
 
 ![image-20210106231016480](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20210106231017.png)
+
+
+
+### 5. grep console监控启动日志
+
+如 监控并高亮启动日志中的 springboot 项目启动 和 nacos 注册成功：
+
+![70ea6f20173a9db6752fc5f09476dd4d](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20260519221147410.png)
+

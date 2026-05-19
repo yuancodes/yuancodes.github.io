@@ -99,6 +99,14 @@ LambdaUpdateWrapper 等价于 `LambdaUpdateChainWrapper`。
     }
 ```
 
+> 特别注意！！！
+>
+> MyBatis-Plus 默认策略：
+>
+> updateById() → `忽略 null`，不更新
+>
+> wrapper.set() → 强制更新，`不管是不是 null`
+
 
 
 ### 2. 批量操作
