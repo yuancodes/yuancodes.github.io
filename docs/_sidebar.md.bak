@@ -61,7 +61,7 @@
         * [Linux系统性能分析命令(图)](./01_操作系统/04_Linux/06-Linux系统性能分析命令(图).md)
     * 05_Windows
         * [win批处理命令大全](./01_操作系统/05_Windows/01-win批处理命令大全.md)
-        * [hosts自用](./01_操作系统/05_Windows/02-hosts自用.md)
+        * [hosts自用&局域网访问页面](./01_操作系统/05_Windows/02-hosts自用&局域网访问页面.md)
         * [10分钟搞定win11安卓子系统](./01_操作系统/05_Windows/03-10分钟搞定win11安卓子系统.md)
         * [win10或win11系统激活-纯命令](./01_操作系统/05_Windows/04-win10或win11系统激活-纯命令.md)
         * [win11系统优化+powershell美化](./01_操作系统/05_Windows/05-win11系统优化+powershell美化.md)
