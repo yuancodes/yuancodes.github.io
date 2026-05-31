@@ -60,6 +60,22 @@ Github 地址：
 
 选择合适自己的安装即可。
 
+> 【关闭 posershell7 的更新】
+>
+> ![image-20260531154125545](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20260531154127482.png)
+>
+> 可以通过设置 `POWERSHELL_UPDATECHECK` 环境变量来更改更新通知的行为。 支持以下值：
+>
+> - `Off` 会关闭更新通知功能
+> - `Default` 等同于不定义 `POWERSHELL_UPDATECHECK`
+>   - GA 版本通知 GA 版本的更新
+>   - 预览版/RC 版本通知 GA 版本和预览版的更新
+> - `LTS` 仅通知长期服务 (LTS) GA 版本的更新
+>
+> 在 PowerShell 启动之前，必须设置此环境变量。
+>
+> ![img](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20260531154233159.png)
+
 ### 2.2 安装 Terminal（终端）
 
 从 **微软商店（Microsoft Store）** 当中安装即可。
