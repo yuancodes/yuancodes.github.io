@@ -609,6 +609,7 @@
         * [Docker 安装](./12_项目管理/04_Docker/01-Docker%20安装.md)
         * [Docker Dockerfile和镜像部署](./12_项目管理/04_Docker/02-Docker%20Dockerfile和镜像部署.md)
         * [Docker 禅道-敏捷开发](./12_项目管理/04_Docker/03-Docker%20禅道-敏捷开发.md)
+        * [Docker 构建镜像&运行&负载均衡](./12_项目管理/04_Docker/04-Docker%20构建镜像&运行&负载均衡.md)
     * 05_Document
         * [立项申请](./12_项目管理/05_Document/01-立项申请.md)
         * [立项审批](./12_项目管理/05_Document/02-立项审批.md)
