@@ -550,10 +550,10 @@ pipeline {
   nvm use 18.16.0
   node -v #此时node为18.16.0
 
-  如果报错则需要升级make和gcc：参考如下方法
+  如果报错则需要升级make和gcc：参考如下方法，参考【附录】
 ```
 
-* 安装nvm管理node多版本：https://blog.51cto.com/qiuyue/6260438
+* 安装nvm管理node多版本(同【附录】)：https://blog.51cto.com/qiuyue/6260438
 * 比如我用的 node 16.15.1 和 18.16.0，通过 nvm list可以看到
 * 安装nvm多版本管理后，jenkins中创建的任务可能看不到了，原因是因为中文编码问题。
   
@@ -1412,5 +1412,476 @@ php扩展目录：
 
 nginx位置：
 vi /usr/local/nginx/conf/nginx.conf
+```
+
+
+
+
+
+## 【附录】解决 node -v 报错,缺少GLIBC_2.27...
+
+![image-20260602222928150](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20260602222930073.png)
+
+
+#### 1、确认相关的版本
+
+（1）查看GLIBC支持版本：
+
+```sh
+strings /lib64/libc.so.6 | grep ^GLIBC_
+```
+
+
+说明：不支持GLIBC_2.25和GLIBC_2.28。
+
+```sh
+strings /lib64/libm.so.6 | grep ^GLIBC_
+```
+
+
+说明：不支持GLIBC_2.27。
+
+（2）查看CXXABI支持版本：
+
+```sh
+strings /lib64/libstdc++.so.6 | grep ^CXXABI_
+```
+
+
+说明：不支持CXXABI_1.3.9。
+
+（3）查看GLIBCXX支持版本：
+
+```sh
+strings /lib64/libstdc++.so.6 | grep ^GLIBCXX_
+```
+
+
+说明：不支持GLIBCXX_3.4.20和GLIBCXX_3.4.21。
+
+解决方案：`需要升级系统中的make、GCC和GLIBC版本`。
+
+#### 2、升级make
+
+（1）查看升级前版本：
+
+```sh
+make -v
+```
+
+
+（2）下载4.2版本（不能使用目前最新的4.4.1版本）：
+
+```sh
+yum -y install wget
+wget http://ftp.gnu.org/pub/gnu/make/make-4.2.tar.gz
+```
+
+
+（3）编译安装4.2版本：
+
+```sh
+cd /usr/src
+tar -xf make-4.2.tar.gz
+cd make-4.2
+./configure
+make -j16
+make install
+cd /usr/bin
+mv make make.bak
+cp /usr/local/bin/make .
+```
+
+（4）查看升级后版本：
+
+```sh
+make -v
+```
+
+#### 3、升级GCC
+
+（1）查看升级前版本：
+
+```sh
+gcc --version
+```
+
+
+（2）下载8.1.0版本并上传至服务器（不能使用目前较新的10.1.0及以上版本）：
+
+下载地址http://www.netgull.com/gcc/releases/gcc-8.1.0/gcc-8.1.0.tar.gz
+
+```sh
+cd /usr/src
+wget http://www.netgull.com/gcc/releases/gcc-8.1.0/gcc-8.1.0.tar.gz
+```
+
+（3）安装依赖软件包：
+
+```sh
+yum -y install bzip2
+```
+
+（4）编译安装8.1.0版本：
+
+```sh
+cd /usr/src
+tar -xf gcc-8.1.0.tar.gz
+cd gcc-8.1.0
+./contrib/download_prerequisites
+```
+
+```sh
+mkdir build
+cd build
+../configure --enable-bootstrap --enable-checking=release --enable-languages=c,c++ --disable-multilib
+make -j16
+make install
+cd /usr/bin
+mv gcc gcc.bak
+cp /usr/local/bin/gcc .
+```
+
+
+（5）查看升级后版本：
+
+```sh
+gcc --version
+```
+
+
+（6）找到最新动态库：
+
+```sh
+find / -name "libstdc++.so*"
+```
+
+
+（7）将上述最新的动态库libstdc++.so.6.0.25复制至/usr/lib64目录下：
+
+```sh
+cp /usr/src/gcc-8.1.0/build/stage1-x86_64-pc-linux-gnu/libstdc++-v3/src/.libs/libstdc++.so.6.0.25 /usr/lib64
+```
+
+（8）查看默认动态库的版本：
+
+```sh
+cd /usr/lib64
+ls -lh libstdc++.so.6
+```
+
+
+（9）将默认动态库的软链接指向最新版本的动态库：
+
+```sh
+mv libstdc++.so.6{,.bak}
+ln -sv libstdc++.so.6.0.25 libstdc++.so.6
+```
+
+#### 4、升级GLIBC
+
+（1）查看升级前版本：
+
+```sh
+ldd --version
+```
+
+
+（2）下载2.30版本并上传至服务器：
+
+下载地址http://ftp.gnu.org/pub/gnu/glibc/glibc-2.30.tar.xz
+
+```sh
+cd /usr/src
+wget http://ftp.gnu.org/pub/gnu/glibc/glibc-2.30.tar.xz
+```
+
+说明：
+
+a、GLIBC从2.29版本开始需要Python 3.4.0及以上版本的支持。
+
+b、相关依赖组件支持的具体版本可通过glibc-2.30.tar.xz压缩包中的INSTALL文件查看。
+
+（3）升级Python：
+
+a、查看升级前版本：
+
+```sh
+python -V
+```
+
+
+b、下载3.8.0版本并上传至服务器：
+
+下载地址https://www.python.org/ftp/python/3.8.0/Python-3.8.0.tar.xz
+
+```sh
+cd /usr/src
+wget https://www.python.org/ftp/python/3.8.0/Python-3.8.0.tar.xz
+```
+
+c、安装依赖软件包：
+
+```sh
+yum -y install zlib-devel openssl-devel ncurses-devel readline-devel tk-devel gdbm-devel db4-devel libpcap-devel
+```
+
+d、编译安装3.8.0版本：
+
+```sh
+cd /usr/src
+tar -xf Python-3.8.0.tar.xz
+cd Python-3.8.0
+./configure --prefix=/usr/local/python3.8.0
+make -j16
+make install
+mv /usr/bin/python /usr/bin/python2.7.5
+ln -sv /usr/local/python3.8.0/bin/python3 /usr/bin/python
+ln -sv /usr/local/python3.8.0/bin/pip3 /usr/bin/pip
+```
+
+e、配置环境变量：
+
+```sh
+vim /etc/profile.d/python3.8.0.sh
+export PATH=/usr/local/python3.8.0/bin:$PATH
+. /etc/profile.d/python3.8.0.sh
+```
+
+f、查看升级后版本：
+
+```sh
+python -V
+```
+
+
+g、版本升级后yum命令无法使用的解决方案：
+
+```sh
+vim /usr/bin/yum
+```
+
+将第一行的“#!/usr/bin/python”修改为“#!/usr/bin/python2.7.5”
+
+```sh
+vim /usr/libexec/urlgrabber-ext-down
+```
+
+将第一行的“#! /usr/bin/python”修改为“#! /usr/bin/python2.7.5”
+
+（4）安装GLIBC 2.30版本依赖的软件包：
+
+```sh
+yum -y install bison texinfo
+bison -V
+```
+
+
+（5）编译安装2.30版本：
+
+```sh
+cd /usr/src
+tar -xf glibc-2.30.tar.xz
+cd /usr/src/glibc-2.30
+mkdir build
+cd build
+../configure --prefix=/usr --disable-profile --enable-add-ons --with-headers=/usr/include --with-binutils=/usr/bin
+make -j16
+make install
+```
+
+
+说明：`make install` 最后会有报错，但这个错误提示不影响GLIBC的升级，无需理会。
+
+（6）查看升级后版本：
+
+```sh
+ldd --version
+```
+
+#### 5、查看GLIBC、CXXABI和GLIBCXX支持的版本是否满足
+
+（1）GLIBC：
+
+```sh
+strings /lib64/libc.so.6 | grep ^GLIBC_2.25 | uniq
+```
+
+```sh
+strings /lib64/libc.so.6 | grep ^GLIBC_2.28 | uniq
+```
+
+```sh
+strings /lib64/libm.so.6 | grep ^GLIBC_2.27
+```
+
+
+（2）CXXABI：
+
+```sh
+strings /lib64/libstdc++.so.6 | grep ^CXXABI_1.3.9 | uniq
+```
+
+
+（3）GLIBCXX：
+
+```sh
+strings /lib64/libstdc++.so.6 | grep ^GLIBCXX_3.4.20 | uniq
+```
+
+```sh
+strings /lib64/libstdc++.so.6 | grep ^GLIBCXX_3.4.21 | uniq
+```
+
+#### 6、查看Node.js和npm版本
+
+```sh
+node -v
+```
+
+```sh
+npm -v
+```
+
+大功告成！
+
+
+
+【真·附录】一键脚本
+
+一键解决脚本（有下载和安装编译，时间较长，约30min+）：
+
+```sh
+#!/bin/bash
+set -e
+
+# 颜色输出
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+NC='\033[0m'
+
+info() { echo -e "${GREEN}[INFO] $* ${NC}"; }
+warn() { echo -e "${YELLOW}[WARN] $* ${NC}"; }
+error() { echo -e "${RED}[ERROR] $* ${NC}"; exit 1; }
+
+info "============================================="
+info "  CentOS7 一键升级 GCC+GLIBC+Python+Make     "
+info "  用于解决 node 报错：缺少 GLIBC_2.27 等     "
+info "============================================="
+
+#====================================================================
+info "1. 安装基础依赖"
+#====================================================================
+yum install -y wget tar bzip2 gcc gcc-c++ zlib-devel openssl-devel ncurses-devel readline-devel tk-devel gdbm-devel libpcap-devel bison texinfo
+
+#====================================================================
+info "2. 升级 make → 4.2"
+#====================================================================
+cd /usr/src
+wget http://ftp.gnu.org/pub/gnu/make/make-4.2.tar.gz
+tar -xf make-4.2.tar.gz
+cd make-4.2
+./configure
+make -j$(nproc)
+make install
+
+mv -f /usr/bin/make /usr/bin/make.bak
+cp /usr/local/bin/make /usr/bin/
+
+info "make 升级成功："
+make -v
+
+#====================================================================
+info "3. 升级 GCC → 8.1.0"
+#====================================================================
+cd /usr/src
+wget http://www.netgull.com/gcc/releases/gcc-8.1.0/gcc-8.1.0.tar.gz
+tar -xf gcc-8.1.0.tar.gz
+cd gcc-8.1.0
+
+./contrib/download_prerequisites
+
+mkdir -p build
+cd build
+../configure --enable-bootstrap --enable-checking=release --enable-languages=c,c++ --disable-multilib
+make -j$(nproc)
+make install
+
+mv -f /usr/bin/gcc /usr/bin/gcc.bak
+cp /usr/local/bin/gcc /usr/bin/
+
+info "GCC 升级成功："
+gcc --version
+
+#====================================================================
+info "4. 更新 libstdc++.so.6 动态库"
+#====================================================================
+lib=$(find /usr/src/gcc-8.1.0/build -name "libstdc++.so.6.0.25" | head -1)
+cp -f "$lib" /usr/lib64/
+
+cd /usr/lib64
+mv -f libstdc++.so.6 libstdc++.so.6.bak
+ln -s libstdc++.so.6.0.25 libstdc++.so.6
+
+info "libstdc++.so.6 更新完成"
+
+#====================================================================
+info "5. 升级 Python → 3.8.0"
+#====================================================================
+cd /usr/src
+wget https://www.python.org/ftp/python/3.8.0/Python-3.8.0.tar.xz
+tar -xf Python-3.8.0.tar.xz
+cd Python-3.8.0
+
+./configure --prefix=/usr/local/python3.8.0
+make -j$(nproc)
+make install
+
+mv -f /usr/bin/python /usr/bin/python2.7.5
+ln -sf /usr/local/python3.8.0/bin/python3 /usr/bin/python
+ln -sf /usr/local/python3.8.0/bin/pip3 /usr/bin/pip
+
+# 修复 yum
+sed -i '1s/python/python2.7.5/' /usr/bin/yum
+sed -i '1s/python/python2.7.5/' /usr/libexec/urlgrabber-ext-down
+
+info "Python 升级成功："
+python -V
+
+#====================================================================
+info "6. 升级 GLIBC → 2.30"
+#====================================================================
+cd /usr/src
+wget http://ftp.gnu.org/pub/gnu/glibc/glibc-2.30.tar.xz
+tar -xf glibc-2.30.tar.xz
+cd glibc-2.30
+
+mkdir -p build
+cd build
+../configure --prefix=/usr --disable-profile --enable-add-ons --with-headers=/usr/include --with-binutils=/usr/bin
+
+make -j$(nproc)
+make install || warn "GLIBC安装完成，最后报错可忽略"
+
+info "GLIBC 升级成功："
+ldd --version
+
+#====================================================================
+info "7. 最终检查版本支持情况"
+#====================================================================
+echo -e "\n${YELLOW}==== GLIBC 版本检查 ====${NC}"
+strings /lib64/libc.so.6 | grep -E 'GLIBC_2.25|GLIBC_2.27|GLIBC_2.28' | head -10
+
+echo -e "\n${YELLOW}==== CXXABI 版本检查 ====${NC}"
+strings /lib64/libstdc++.so.6 | grep CXXABI_1.3.9
+
+echo -e "\n${YELLOW}==== GLIBCXX 版本检查 ====${NC}"
+strings /lib64/libstdc++.so.6 | grep -E 'GLIBCXX_3.4.20|GLIBCXX_3.4.21'
+
+info "============================================="
+info "              全部升级完成！"
+info "      现在可以正常运行 node -v 了！"
+info "============================================="
 ```
 

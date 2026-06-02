@@ -402,3 +402,18 @@ AI 会自动识别出你的意图，并调用 **Code Review** Skill 来回答你
 - **description 尽量**场景化：例如 `在 Spring Boot 项目中新增或修改接口时使用` 这类描述，有助于 Trae 自动匹配；
 - **结合企业规范**：如果你公司有现成的编码规范 PDF / Wiki，可以提炼成 Skill 里的**步骤和 checklist**，这样 AI 会严格按规范干活。
 
+
+
+> 用AI作出完整项目的13个skill分享：
+> https://forum.trae.cn/t/topic/2000
+
+## 六、索引与文档
+
+TRAE 索引与文档(全栈自用)：
+Vue3: https://cn.vuejs.org/guide/introduction
+ElementPlus: https://element-plus.org/zh-CN/component/overview
+MySQL8: https://mysql.net.cn/doc/refman/8.0/en/preface.html
+JDK21: https://docs.oracle.com/en/java/javase/21/index.html
+RocketMQ5: https://rocketmq.apache.org/zh/docs/
+SpringBoot3: https://springdoc.cn/spring-boot/
+MyBatisPlus: https://baomidou.com/introduce/
