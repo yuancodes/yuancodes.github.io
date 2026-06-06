@@ -1747,7 +1747,7 @@ npm -v
 
 
 
-【真·附录】一键脚本
+## 【真·附录】一键脚本
 
 一键解决脚本（有下载和安装编译，时间较长，约30min+）：
 
@@ -1817,12 +1817,12 @@ gcc --version
 #====================================================================
 info "4. 更新 libstdc++.so.6 动态库"
 #====================================================================
-lib=$(find /usr/src/gcc-8.1.0/build -name "libstdc++.so.6.0.25" | head -1)
-cp -f "$lib" /usr/lib64/
-
+find / -name "libstdc++.so*"
+cp /usr/src/gcc-8.1.0/build/stage1-x86_64-pc-linux-gnu/libstdc++-v3/src/.libs/libstdc++.so.6.0.25 /usr/lib64
 cd /usr/lib64
-mv -f libstdc++.so.6 libstdc++.so.6.bak
-ln -s libstdc++.so.6.0.25 libstdc++.so.6
+ls -lh libstdc++.so.6
+mv libstdc++.so.6{,.bak}
+ln -sv libstdc++.so.6.0.25 libstdc++.so.6
 
 info "libstdc++.so.6 更新完成"
 
@@ -1842,9 +1842,17 @@ mv -f /usr/bin/python /usr/bin/python2.7.5
 ln -sf /usr/local/python3.8.0/bin/python3 /usr/bin/python
 ln -sf /usr/local/python3.8.0/bin/pip3 /usr/bin/pip
 
-# 修复 yum
-sed -i '1s/python/python2.7.5/' /usr/bin/yum
-sed -i '1s/python/python2.7.5/' /usr/libexec/urlgrabber-ext-down
+# 环境变量
+cat > /etc/profile.d/python3.8.0.sh <<'EOF'
+export PATH=/usr/local/python3.8.0/bin:$PATH
+EOF
+
+source /etc/profile.d/python3.8.0.sh
+
+# 修复 /usr/bin/yum
+sed -i '1s|^#!/usr/bin/python|#!/usr/bin/python2.7.5|' /usr/bin/yum
+# 修复 /usr/libexec/urlgrabber-ext-down
+sed -i '1s|^#! */usr/bin/python|#!/usr/bin/python2.7.5|' /usr/libexec/urlgrabber-ext-down
 
 info "Python 升级成功："
 python -V
