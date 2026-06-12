@@ -2,13 +2,13 @@
 title: 05-prompt提示词指导规范
 date: 2023-7-19 20:55:44
 tags:
-- 第三方
-- OpenAI
-- chatGPT
-- prompt
-categories: 
-- 13_第三方
-- 01_OpenAI
+  - 第三方
+  - OpenAI
+  - chatGPT
+  - prompt
+categories:
+  - 22_AI
+  - 01_OpenAI
 ---
 
 ![image-20230420144823328](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20230420144824.png)

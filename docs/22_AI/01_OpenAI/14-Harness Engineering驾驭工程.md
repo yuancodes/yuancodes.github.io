@@ -3,12 +3,12 @@ title: 14-Harness Engineering驾驭工程
 date: 2026-02-28 21:32:13
 index_img: https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20260412093600700.png
 tags:
-- ai
-- 大模型
-- Harness Engineering
-categories: 
-- 13_第三方
-- 01_OpenAI
+  - ai
+  - 大模型
+  - Harness Engineering
+categories:
+  - 22_AI
+  - 01_OpenAI
 ---
 
 ![image-20260412093559429](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20260412093600700.png)

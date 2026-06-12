@@ -3,13 +3,13 @@ title: 11-【AI智能体】Coze 搭建个人旅游规划助手实战详解
 date: 2025-07-05 09:56:10
 index_img: https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20250206172444.png
 tags:
-- 第三方
-- OpenAI
-- MCP
-- 智能体
-categories: 
-- 13_第三方
-- 01_OpenAI
+  - 第三方
+  - OpenAI
+  - MCP
+  - 智能体
+categories:
+  - 22_AI
+  - 01_OpenAI
 ---
 
 

@@ -3,11 +3,11 @@ title: 01-10分钟搭建OpenClaw(Win11+飞书)
 date: 2026-03-07 23:45:14
 index_img: https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20260306194755883.png
 tags:
-- ai
-- 大模型
-categories: 
-- 13_第三方
-- 02_OpenClaw
+  - ai
+  - 大模型
+categories:
+  - 22_AI
+  - 02_OpenClaw
 ---
 
 ![image-20260306194754691](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20260306194755883.png)

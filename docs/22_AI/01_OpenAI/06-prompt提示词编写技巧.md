@@ -2,13 +2,13 @@
 title: 06-prompt提示词编写技巧
 date: 2023-7-19 22:14:45
 tags:
-- 第三方
-- OpenAI
-- chatGPT
-- prompt
-categories: 
-- 13_第三方
-- 01_OpenAI
+  - 第三方
+  - OpenAI
+  - chatGPT
+  - prompt
+categories:
+  - 22_AI
+  - 01_OpenAI
 ---
 
 ![image-20230420144823328](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20230420144824.png)

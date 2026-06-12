@@ -3,12 +3,12 @@ title: 01-ClaudeCode学习和使用
 date: 2026-01-22 23:35:05
 index_img: https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20260210171726358.png
 tags:
-- ai
-- 大模型
-- Chat拆解
-categories: 
-- 13_第三方
-- 04_ClaudeCode
+  - ai
+  - 大模型
+  - Chat拆解
+categories:
+  - 22_AI
+  - 04_ClaudeCode
 ---
 
 

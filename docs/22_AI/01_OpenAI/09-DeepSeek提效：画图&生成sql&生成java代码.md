@@ -3,12 +3,12 @@ title: 09-DeepSeek提效：画图&生成sql&生成java代码
 date: 2025-03-03 21:02:43
 index_img: https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20250206172444.png
 tags:
-- 第三方
-- OpenAI
-- Deepseek
-categories: 
-- 13_第三方
-- 01_OpenAI
+  - 第三方
+  - OpenAI
+  - Deepseek
+categories:
+  - 22_AI
+  - 01_OpenAI
 ---
 
 

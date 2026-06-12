@@ -3,12 +3,12 @@ title: 08-Deepseek从入门到精通（完整版）
 date: 2025-02-06 19:12:58
 index_img: https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20250206172444.png
 tags:
-- 第三方
-- OpenAI
-- Deepseek
-categories: 
-- 13_第三方
-- 01_OpenAI
+  - 第三方
+  - OpenAI
+  - Deepseek
+categories:
+  - 22_AI
+  - 01_OpenAI
 ---
 
 

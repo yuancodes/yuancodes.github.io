@@ -3,12 +3,12 @@ title: 12-Vibe Coding完全指导手册
 date: 2025-10-10 22:46:04
 index_img: https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20260103104344816.png
 tags:
-- 第三方
-- OpenAI
-- VSCode
-categories: 
-- 13_第三方
-- 01_OpenAI
+  - 第三方
+  - OpenAI
+  - VSCode
+categories:
+  - 22_AI
+  - 01_OpenAI
 ---
 
 ![image-20260103104343566](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20260103104344816.png)

@@ -3,12 +3,12 @@ title: 10-SpringBoot+MCP整合AI与服务的桥梁
 date: 2025-04-08 19:40:49
 index_img: https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20250206172444.png
 tags:
-- 第三方
-- OpenAI
-- MCP
-categories: 
-- 13_第三方
-- 01_OpenAI
+  - 第三方
+  - OpenAI
+  - MCP
+categories:
+  - 22_AI
+  - 01_OpenAI
 ---
 
 
