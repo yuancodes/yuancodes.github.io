@@ -815,7 +815,7 @@
         * [接入chatGPT API](./22_AI/01_OpenAI/01-接入chatGPT%20API.md)
         * [chatGPT提示词汇总](./22_AI/01_OpenAI/02-chatGPT提示词汇总.md)
         * [chatGPT生成UML图形](./22_AI/01_OpenAI/03-chatGPT生成UML图形.md)
-        * [国内&国外大模型汇总](./22_AI/01_OpenAI/04-国内&国外大模型汇总.md)
+        * [国内&国外大模型&AI IDE汇总](./22_AI/01_OpenAI/04-国内&国外大模型&AI%20IDE汇总.md)
         * [prompt提示词指导规范](./22_AI/01_OpenAI/05-prompt提示词指导规范.md)
         * [prompt提示词编写技巧](./22_AI/01_OpenAI/06-prompt提示词编写技巧.md)
         * [百度文心一言接入流程-java版](./22_AI/01_OpenAI/07-百度文心一言接入流程-java版.md)

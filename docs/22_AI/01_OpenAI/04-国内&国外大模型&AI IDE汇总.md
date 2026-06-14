@@ -1,5 +1,5 @@
 ---
-title: 04-国内&国外大模型汇总
+title: 04-国内&国外大模型&AI IDE汇总
 date: 2023-07-10 20:52:34
 tags:
   - 第三方
@@ -183,4 +183,9 @@ CopilotX智能编程: https://github.com/features/preview/copilot-x
 
 Cursor自动编码: https://www.cursor.so/
 
-持续补充...
+
+## AI IDE
+
+> 截止 2026-06 月，已知的主流 AI IDE。
+
+![image-20260614234335080](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20260614234337111.png)
