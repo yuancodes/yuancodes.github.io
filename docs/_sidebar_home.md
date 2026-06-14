@@ -38,11 +38,6 @@
             <div style="font-size: 1.25rem;font-weight: 600;color: #2d3748;margin: 1.5rem 0 1rem 0;line-height: 1.4;">项目管理</div>
             <p style="color: #666;">从需求到交付的全流程管控</p>
         </div>
-        <div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); text-align: center;">
-            <div style="font-size: 2rem; margin-bottom: 12px;">⚙️</div>
-            <div style="font-size: 1.25rem;font-weight: 600;color: #2d3748;margin: 1.5rem 0 1rem 0;line-height: 1.4;">架构与性能</div>
-            <p style="color: #666;">高可用与系统优化实践</p>
-        </div>
     </div>
     <div style="margin: 40px 0;">
         <div style="color: #2d3748; font-size: 1.6rem; font-weight: 600; margin-bottom: 20px;"> 🛠️ 实战成长 </div>
