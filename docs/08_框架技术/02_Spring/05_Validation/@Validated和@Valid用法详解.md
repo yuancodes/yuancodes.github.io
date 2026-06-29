@@ -1,6 +1,6 @@
 ---
 order: 2
-title: @Validated和@Valid用法详解
+title: "@Validated和@Valid用法详解"
 date: 2021-11-28 10:24:23
 tags:
 - Spring

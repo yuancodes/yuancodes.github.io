@@ -1,6 +1,6 @@
 ---
 order: 1
-title: @Value未配置不报错的配置类
+title: "@Value未配置不报错的配置类"
 date: 2022-06-15 20:47:19
 tags:
 - 配置类
