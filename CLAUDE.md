@@ -23,6 +23,8 @@ node gensidebar.js
 
 该脚本会遍历 `docs/` 下所有 `.md` 文件（跳过 `_` 开头文件、`README.md` 及 `.git`、`categories`、`emoji`、`about`、`tool`、`js`、`css` 目录），按层级生成 Markdown 格式的侧边栏内容写入 `_sidebar.md`，同时备份原文件为 `_sidebar.md.bak`。
 
+**排序规则**：同一目录下的文件按 front matter 中的 `order` 字段升序排列（数字越小越靠前），未设置 `order` 的文件排在最后，同 `order` 值内按文件名排序。目录名始终排在同级文件之后。
+
 ### 本地预览
 
 ```bash

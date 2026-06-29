@@ -336,6 +336,7 @@
         * [邮箱发送验证码](./04_大前端/20_验证码/03-邮箱发送验证码.md)
     * 21_开源框架
         * [Rete.js可视化工作流](./04_大前端/21_开源框架/01-Rete.js可视化工作流.md)
+    * [99_前端&后端脚手架项目](./04_大前端/99_前端&后端脚手架项目.md)
     * 99_JSP
         * [JSP原理和指令](./04_大前端/99_JSP/01-JSP原理和指令.md)
         * [JSP 9大内置对象](./04_大前端/99_JSP/02-JSP%209大内置对象.md)
@@ -348,7 +349,6 @@
         * [JSP 分页查询](./04_大前端/99_JSP/09-JSP%20分页查询.md)
         * [JSP 文件上传下载](./04_大前端/99_JSP/10-JSP%20文件上传下载.md)
         * [JSP 自定义标签](./04_大前端/99_JSP/11-JSP%20自定义标签.md)
-    * [99_前端&后端脚手架项目](./04_大前端/99_前端&后端脚手架项目.md)
 * 05_数据库
     * 01_MySQL
         * [安装&配置&卸载](./05_数据库/01_MySQL/01-安装&配置&卸载.md)
@@ -508,9 +508,9 @@
         * [SpringBoot解决跨域问题](./08_框架技术/04_SpringBoot/21-SpringBoot解决跨域问题.md)
         * [SpringBoot+Java21脚手架](./08_框架技术/04_SpringBoot/22-SpringBoot+Java21脚手架.md)
     * 05_SpringCloud
-        * [Spring Cloud Alibaba快速上手](./08_框架技术/05_SpringCloud/Spring%20Cloud%20Alibaba快速上手.md)
         * [Spring Cloud Alibaba架构](./08_框架技术/05_SpringCloud/Spring%20Cloud%20Alibaba架构.md)
         * [Spring Cloud Alibaba架构整合](./08_框架技术/05_SpringCloud/Spring%20Cloud%20Alibaba架构整合.md)
+        * [Spring Cloud Alibaba快速上手](./08_框架技术/05_SpringCloud/Spring%20Cloud%20Alibaba快速上手.md)
         * [Spring Cloud中文文档](./08_框架技术/05_SpringCloud/Spring%20Cloud中文文档.md)
     * 06_Quartz
         * [Quartz 定时任务](./08_框架技术/06_Quartz/Quartz%20定时任务.md)
