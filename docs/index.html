@@ -84,16 +84,16 @@
         sidebarDisplayLevel: 0,
         //百度统计ID
         baiduTjId: "fba5dfa57143abcf0c1e5415d36502af",
-        //全文搜索
-        search: {
-            noData: {
-                '/': '没有结果！'
-            },
-            paths: 'auto',
-            placeholder: {
-                '/': '搜索'
-            }
-        },
+        //全文搜索 - 已禁用，使用预生成索引插件替代
+        // search: {
+        //     noData: {
+        //         '/': '没有结果！'
+        //     },
+        //     paths: 'auto',
+        //     placeholder: {
+        //         '/': '搜索'
+        //     }
+        // },
         //Markdown图片居中设置
         markdown: {
             renderer: {
@@ -194,8 +194,11 @@
 <script src="./js/docsify.min.js"></script>
 <!--JQuery: https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js-->
 <script src="./js/jquery.min.js"></script>
-<!--search 全文搜索插件: https://cdn.bootcdn.net/ajax/libs/docsify/4.13.0/plugins/search.min.js-->
+<!--search 全文搜索插件: 已禁用，使用预生成索引插件替代
 <script src="./js/search.min.js"></script>
+-->
+<!--search 预生成索引搜索插件-->
+<script src="./js/search-index.min.js"></script>
 <!--emoji 表情图标插件: https://cdn.bootcdn.net/ajax/libs/docsify/4.13.0/plugins/emoji.min.js-->
 <script src="./js/emoji.min.js"></script>
 <!--zoom image 图片缩放插件: https://cdn.bootcdn.net/ajax/libs/docsify/4.13.0/plugins/zoom-image.min.js-->

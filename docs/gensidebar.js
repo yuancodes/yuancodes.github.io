@@ -63,9 +63,16 @@ function walkSync(currentDirPath, prefixBlank) {
 
 walkSync(curPath, '');
 
-fs.copyFile(path.resolve('./') + "/_sidebar.md", path.resolve('./') + "/_sidebar.md.bak", function (err) {
-    if (err) throw new Error('something wrong was happended')
-});
+// 备份旧的侧边栏文件（忽略不存在的情况）
+var sidebarPath = path.resolve('./') + "/_sidebar.md";
+var backupPath = path.resolve('./') + "/_sidebar.md.bak";
+if (fs.existsSync(sidebarPath)) {
+    try {
+        fs.copyFileSync(sidebarPath, backupPath);
+    } catch (e) {
+        console.warn('Warning: Could not backup _sidebar.md:', e.message);
+    }
+}
 
 console.log(sidebarTxt);
 fs.writeFile(path.resolve('./') + '/_sidebar.md', sidebarTxt, function (err) {
@@ -73,3 +80,7 @@ fs.writeFile(path.resolve('./') + '/_sidebar.md', sidebarTxt, function (err) {
         console.error(err);
     }
 });
+
+// 生成搜索索引
+console.log('\n--- Generating search index ---');
+require('./build-search-index.js');
