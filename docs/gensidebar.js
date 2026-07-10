@@ -7,7 +7,7 @@ var skipPathArr = ['.git', 'categories', 'emoji', 'about', 'tool', 'js', 'css'];
 function getOrder(filePath) {
     try {
         var content = fs.readFileSync(filePath, 'utf8');
-        var match = content.match(/^---\n([\s\S]*?)\n---/);
+        var match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
         if (match) {
             var orderMatch = match[1].match(/^order:\s*(\S+)/m);
             if (orderMatch) {
