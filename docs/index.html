@@ -248,12 +248,54 @@
 <!--回到顶部-->
 <script>
     docsifyBackTop = {
-        size: 40,           	// 数值，组件大小，默认值32。
-        bottom: 15,         	// 数值，组件底部偏移距离，默认值15。
-        right: 15,          	// 数值，组件右侧偏移距离，默认值15。
-        logo: '🔝',			// logo:字符串或svg矢量图代码，默认为svg代码图标。
-        bgColor: '\#fafafa'    	// 背景颜色，#fff、pink等，logo为svg图标时，不填。
+        size: 28,
+        bottom: 15,
+        right: 15,
+        logo: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#42b983" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg>',
+        bgColor: '#fff',
+        borderColor: '#42b983'
     };
+</script>
+<!-- 右下角额外按钮：首页 + 关于我 -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var timer = setInterval(function () {
+            var backTop = document.querySelector('.backTop');
+            if (!backTop) return;
+            clearInterval(timer);
+
+            var btnStyle = 'position:fixed;width:28px;height:28px;border-radius:50%;background:#fff;cursor:pointer;text-align:center;line-height:28px;transition:opacity 0.5s;opacity:0;z-index:99;';
+            var svgStyle = 'width:100%;height:100%;';
+
+            // 返回首页按钮
+            var homeBtn = document.createElement('div');
+            homeBtn.className = 'backHome';
+            homeBtn.title = '返回首页';
+            homeBtn.style.cssText = btnStyle + 'bottom:83px;right:280px;';
+            homeBtn.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#42b983" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>';
+            homeBtn.onclick = function () { window.location.hash = '/'; };
+            document.body.appendChild(homeBtn);
+
+            // 关于我按钮
+            var aboutBtn = document.createElement('div');
+            aboutBtn.className = 'backAbout';
+            aboutBtn.title = '关于我';
+            aboutBtn.style.cssText = btnStyle + 'bottom:49px;right:280px;';
+            aboutBtn.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#42b983" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>';
+            aboutBtn.onclick = function () { window.location.hash = '/about/README'; };
+            document.body.appendChild(aboutBtn);
+
+            // 返回顶部按钮添加 title
+            backTop.title = '返回顶部';
+
+            // 滚动时显示/隐藏
+            window.addEventListener('scroll', function () {
+                var show = window.scrollY > 0 ? 1 : 0;
+                homeBtn.style.opacity = show;
+                aboutBtn.style.opacity = show;
+            });
+        }, 200);
+    });
 </script>
 <!--<script type="text/javascript">-->
 <!--    $(document).ready(function () {-->

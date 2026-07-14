@@ -55,7 +55,7 @@
                             style="background: #fdf2f8; color: #9f7aea; padding: 4px 10px; border-radius: 16px; font-size: 0.8rem;">Vue3</span>
                         <span style="background: #f5f5f5; color: #718096; padding: 4px 10px; border-radius: 16px; font-size: 0.8rem;">MySQL</span>
                     </div>
-                    <a href="https://yuancodes.github.io/#/./17_项目设计/04_全栈项目设计/01-全栈项目搭建-Vue3"
+                    <a href="https://yuancodes.github.io/#/./17_项目设计/04_全栈项目设计/全栈项目搭建-Vue3"
                         style="color: #4299e1; text-decoration: none; font-weight: 500;">
                         查看详情 →
                     </a>
@@ -75,7 +75,7 @@
                         <span style="background: #fdf2f8; color: #9f7aea; padding: 4px 10px; border-radius: 16px; font-size: 0.8rem;">质量</span>
                         <span style="background: #eaf6fa; color: #38b2ac; padding: 4px 10px; border-radius: 16px; font-size: 0.8rem;">进度</span>
                     </div>
-                        <a href="https://yuancodes.github.io/#/./12_项目管理/06_PMP/03-如何做好技术PM"
+                        <a href="https://yuancodes.github.io/#/./12_项目管理/06_PMP/如何做好技术PM"
                         style="color: #4299e1; text-decoration: none; font-weight: 500;"> 查看详情
                         → </a>
                 </div>
