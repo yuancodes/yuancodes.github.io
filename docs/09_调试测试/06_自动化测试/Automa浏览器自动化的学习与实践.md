@@ -2,6 +2,7 @@
 order: 3
 title: Automa浏览器自动化的学习与实践
 date: 2026-07-16 23:13:55
+index_img: https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20260716225130987.png
 tags: 
 - automa
 - 浏览器自动化
@@ -11,7 +12,7 @@ categories:
 - 06_自动化测试
 ---
 
-
+![image-20260716225129496](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20260716225130987.png)
 
 参考资料：
 

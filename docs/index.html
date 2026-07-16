@@ -187,6 +187,15 @@
             pre: '<hr/><div style="text-align: center;"><img src=\"https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20241112163319.png\"></div>',
             style: 'text-align: right;',
             class: 'className',
+        },
+        //手动处理 front matter，确保前置元信息被移除
+        beforeEach: function(content) {
+            var frontMatterRegex = /^\ufeff?---\s*\n[\s\S]*?\n---\s*\n/;
+            var match = content.match(frontMatterRegex);
+            if (match) {
+                return content.replace(match[0], '');
+            }
+            return content;
         }
     }
 </script>
