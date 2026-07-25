@@ -22,8 +22,8 @@
   * [Java-SpringCloud](08_框架技术/05_SpringCloud/Spring%20Cloud%20Alibaba快速上手.md)
   * [Node-Express](04_大前端/06_Node.js/Express框架.md)
   * [Node-Koa](04_大前端/06_Node.js/Koa框架.md)
-  * [JS-Bootstrap](04_大前端/07_Bootstrap/Bootstrap框架使用.md)
-  * [JS-LayUI](04_大前端/08_LayUI/LayUI框架使用.md)
+  * [JS-Bootstrap](04_大前端/18_Bootstrap/Bootstrap框架使用.md)
+  * [JS-LayUI](04_大前端/19_LayUI/LayUI框架使用.md)
   * [Vue-2.0](04_大前端/04_Vue/Vue2.0.md)
   * [Vue-3.0](04_大前端/04_Vue/Vue3.0.md)
   * [React-19](04_大前端/07_React/React基础.md)
@@ -52,14 +52,14 @@
 * **💻服务器▼**
   * [ssh](06_服务器/00_Server/ssh使用详解.md)
   * [Nginx](06_服务器/02_Nginx/Nginx%20配置详解.md)
-  * [CentOS](06_服务器/03_CentOS/VMware安装和配置CentOS7开发&运维环境.md)
+  * [CentOS](06_服务器/03_CentOS/CentOS7开发&运维环境.md)
 
 * **🤖AI▼**
   * [OpenAI](22_AI/01_OpenAI/传统编程到大模型编程是【必然】趋势.md)
   * [TRAE](00_先利其器/09_Trae/Trae%20IDE&SOLO浅尝.md)
   * [ClaudeCode](22_AI/04_ClaudeCode/ClaudeCode学习和使用.md)
   * [OpenClaw](22_AI/02_OpenClaw/10分钟搭建OpenClaw(Win11+飞书).md)
-  * [prompt提示词工程](22_AI/03_提示词/提示词工程之Chat拆解方法论.md)
+  * [Prompt工程](22_AI/03_Prompt/提示词工程之Chat拆解方法论.md)
 
 * [**🛠️工具**](tool/README.md)
 
