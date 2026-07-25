@@ -829,12 +829,14 @@
         * [Harness Engineering驾驭工程](./22_AI/01_OpenAI/Harness%20Engineering驾驭工程.md)
     * 02_OpenClaw
         * [10分钟搭建OpenClaw(Win11+飞书)](./22_AI/02_OpenClaw/10分钟搭建OpenClaw(Win11+飞书).md)
-    * 03_提示词
-        * [分析项目生成代码规范和约束Skill](./22_AI/03_提示词/分析项目生成代码规范和约束Skill.md)
-        * [提示词工程之Chat拆解方法论](./22_AI/03_提示词/提示词工程之Chat拆解方法论.md)
-        * [Java+Vue技术栈前端后端项目提示词工程范例](./22_AI/03_提示词/Java+Vue技术栈前端后端项目提示词工程范例.md)
+    * 03_Prompt
+        * [分析项目生成代码规范和约束Skill](./22_AI/03_Prompt/分析项目生成代码规范和约束Skill.md)
+        * [提示词工程之Chat拆解方法论](./22_AI/03_Prompt/提示词工程之Chat拆解方法论.md)
+        * [Java+Vue技术栈前端后端项目提示词工程范例](./22_AI/03_Prompt/Java+Vue技术栈前端后端项目提示词工程范例.md)
     * 04_ClaudeCode
         * [ClaudeCode学习和使用](./22_AI/04_ClaudeCode/ClaudeCode学习和使用.md)
+    * 05_Codex
+        * [Codex保姆级教程完整版](./22_AI/05_Codex/Codex保姆级教程完整版.md)
 * 99_个人成长
     * 01_书籍资料
         * [Java编程书籍](./99_个人成长/01_书籍资料/Java编程书籍.md)

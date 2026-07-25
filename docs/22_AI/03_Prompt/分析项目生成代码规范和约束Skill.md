@@ -9,7 +9,7 @@ tags:
   - Skill
 categories:
   - 22_AI
-  - 03_提示词
+  - 03_Prompt
 ---
 
 

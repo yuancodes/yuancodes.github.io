@@ -2,17 +2,17 @@
 order: 1
 title: ClaudeCode学习和使用
 date: 2026-01-22 23:35:05
-index_img: https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20260210171726358.png
+index_img: https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20260725193855771.png
 tags:
   - ai
   - 大模型
-  - Chat拆解
+  - ClaudeCode
 categories:
   - 22_AI
   - 04_ClaudeCode
 ---
 
-
+![image-20260725193854305](https://jy-imgs.oss-cn-beijing.aliyuncs.com/img/20260725193855771.png)
 
 参考资料：
 
@@ -21,7 +21,9 @@ categories:
 * https://blog.csdn.net/liulin_521/article/details/155862222
 * https://zhuanlan.zhihu.com/p/2018862186013946674
 
-
+> 同类产品：[ClaudeCode](https://code.claude.com/docs/zh-CN/overview)、[OpenCode](https://opencode.ai/zh)、[MimoCode](https://mimo.xiaomi.com/coder)、[DeepCode](https://deepcode.vegamo.cn/)、[KimiCode](https://www.kimi.com/code/zh)...
+>
+> * 多用会总结出各自的差异和倾向，我始终相信一句最近的玄学：`马和鞍配套的时候，效果才能最好`。
 
 ## 1. 安装
 

@@ -9,7 +9,7 @@ tags:
   - Chat拆解
 categories:
   - 22_AI
-  - 03_提示词
+  - 03_Prompt
 ---
 
 
